@@ -1,5 +1,5 @@
 {
-  "proximo_id": 5,
+  "proximo_id": 9,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -29,20 +29,56 @@
       "universo_id": "reino_fantasia_guerra_sucessao",
       "categoria": "Fantasia",
       "resumo": "Theron, um jovem mago, é chamado por seu mentor, Arin, para uma jornada que o levará a descobrir a verdade sobre o reino e sobre si mesmo, enquanto a guerra civil se aproxima e a magia proibida ressurge. Theron precisa encontrar respostas e fechar o portão que não deveria abrir, mas o caminho está cheio de desafios e incertezas."
+    },
+    "h00005": {
+      "titulo": "Aurora dos Campeões: Academia de Elite para Jovens Talentos Sobrenaturais",
+      "tipo": "inspirado",
+      "universo_id": "escola_herois_poderes",
+      "categoria": "Anime/Mangá",
+      "resumo": "Selene e sua equipe de heróis competem em uma série de desafios na Academia de Elite de Heróis, incluindo uma batalha contra rivais para conquistar um tesouro. No final, eles emergem vitoriosos, mas com mais perguntas do que respostas sobre o verdadeiro propósito da academia e o que está por vir."
+    },
+    "h00006": {
+      "titulo": "Palco de Sombras: Rivalidade e Autoconhecimento na Escola de Artes Estrela",
+      "tipo": "original",
+      "universo_id": "escola_talentos_ocultos",
+      "categoria": "Drama/Coming-of-age",
+      "resumo": "Zara, uma estudante de teatro, luta para se destacar em uma escola de artes competitiva, enquanto descobre segredos e rivalidades que a fazem questionar o verdadeiro significado da arte. Ela deve escolher entre denunciar um colega de classe que roubou a ideia de sua peça ou manter o segredo."
+    },
+    "h00007": {
+      "titulo": "Guardiões do Cosmos: Descobrindo Formas Além do Infinito",
+      "tipo": "inspirado",
+      "universo_id": "crianca_poderes_alienigenas",
+      "categoria": "Cartoons",
+      "resumo": "Amara, uma criança, encontra o Artefato dos Elementos, que lhe concede o poder de se transformar em seres de dimensões paralelas, e precisa aprender a controlá-los para proteger as dimensões de uma organização maligna."
+    },
+    "h00008": {
+      "titulo": "Crono do Destino: O Renascimento do Guardião Eterno",
+      "tipo": "inspirado",
+      "universo_id": "heroi_escolhido_jrpg",
+      "categoria": "Games",
+      "resumo": "Soren, um jovem comum, descobre ser o escolhido de uma profecia antiga e reúne um grupo variado para enfrentar um mal ressurgente, levando a uma batalha épica contra criaturas sombrias."
     }
   },
   "historico_universos_inspirados": [
     "vila_oculta_guerreiros",
-    "grupo_masmorra_classes"
+    "grupo_masmorra_classes",
+    "escola_herois_poderes",
+    "crianca_poderes_alienigenas",
+    "heroi_escolhido_jrpg"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
-    "reino_fantasia_guerra_sucessao"
+    "reino_fantasia_guerra_sucessao",
+    "escola_talentos_ocultos"
   ],
   "historico_titulos": [
     "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
     "Cavernas da Eternidade: Em Busca dos Artefatos Perdidos de Eldoria",
     "Cidade Oculta: O Detetive das Sombras Tecnológicas",
-    "Reino de Umbra: A Ascensão das Sombras Esquecidas"
+    "Reino de Umbra: A Ascensão das Sombras Esquecidas",
+    "Aurora dos Campeões: Academia de Elite para Jovens Talentos Sobrenaturais",
+    "Palco de Sombras: Rivalidade e Autoconhecimento na Escola de Artes Estrela",
+    "Guardiões do Cosmos: Descobrindo Formas Além do Infinito",
+    "Crono do Destino: O Renascimento do Guardião Eterno"
   ]
 }

@@ -2,3 +2,7 @@
 [h00002 | one-shot (inspirado) | Games] Cavernas da Eternidade: Em Busca dos Artefatos Perdidos de Eldoria
 [h00003 | one-shot (original) | Urban Fantasy] Cidade Oculta: O Detetive das Sombras Tecnológicas
 [h00004 | one-shot (original) | Fantasia] Reino de Umbra: A Ascensão das Sombras Esquecidas
+[h00005 | one-shot (inspirado) | Anime/Mangá] Aurora dos Campeões: Academia de Elite para Jovens Talentos Sobrenaturais
+[h00006 | one-shot (original) | Drama/Coming-of-age] Palco de Sombras: Rivalidade e Autoconhecimento na Escola de Artes Estrela
+[h00007 | one-shot (inspirado) | Cartoons] Guardiões do Cosmos: Descobrindo Formas Além do Infinito
+[h00008 | one-shot (inspirado) | Games] Crono do Destino: O Renascimento do Guardião Eterno
