@@ -1,0 +1,48 @@
+{
+  "proximo_id": 5,
+  "series_ativas": {},
+  "historias_registradas": {
+    "h00001": {
+      "titulo": "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
+      "tipo": "inspirado",
+      "universo_id": "vila_oculta_guerreiros",
+      "categoria": "Anime/Mangá",
+      "resumo": "Kael, um jovem ninja do clã Akakawa, vence o torneio das sombras, mas um homem misterioso aparece e anuncia que a verdadeira batalha está apenas começando."
+    },
+    "h00002": {
+      "titulo": "Cavernas da Eternidade: Em Busca dos Artefatos Perdidos de Eldoria",
+      "tipo": "inspirado",
+      "universo_id": "grupo_masmorra_classes",
+      "categoria": "Games",
+      "resumo": "Um grupo de aventureiros liderados por Cass explora a perigosa masmorra de Torre do Silêncio em busca do lendário Olho de Eldrador, enfrentando desafios e superando obstáculos até conquistar o artefato, mas não sem questionar o custo de sua ação."
+    },
+    "h00003": {
+      "titulo": "Cidade Oculta: O Detetive das Sombras Tecnológicas",
+      "tipo": "original",
+      "universo_id": "detetive_urbano_sobrenatural",
+      "categoria": "Urban Fantasy",
+      "resumo": "Finnian, um detetive especializado em casos que envolvem magia e tecnologia, investiga uma série de desaparecimentos no bairro de Argentum e descobre os Olhos de Fogo, uma tecnologia mágica perigosa criada por Arcturus. Finnian derrota Arcturus e destrói os Olhos de Fogo, salvando a cidade, mas sabe que há mais coisas escondidas na cidade que ele precisa descobrir."
+    },
+    "h00004": {
+      "titulo": "Reino de Umbra: A Ascensão das Sombras Esquecidas",
+      "tipo": "original",
+      "universo_id": "reino_fantasia_guerra_sucessao",
+      "categoria": "Fantasia",
+      "resumo": "Theron, um jovem mago, é chamado por seu mentor, Arin, para uma jornada que o levará a descobrir a verdade sobre o reino e sobre si mesmo, enquanto a guerra civil se aproxima e a magia proibida ressurge. Theron precisa encontrar respostas e fechar o portão que não deveria abrir, mas o caminho está cheio de desafios e incertezas."
+    }
+  },
+  "historico_universos_inspirados": [
+    "vila_oculta_guerreiros",
+    "grupo_masmorra_classes"
+  ],
+  "historico_universos_originais": [
+    "detetive_urbano_sobrenatural",
+    "reino_fantasia_guerra_sucessao"
+  ],
+  "historico_titulos": [
+    "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
+    "Cavernas da Eternidade: Em Busca dos Artefatos Perdidos de Eldoria",
+    "Cidade Oculta: O Detetive das Sombras Tecnológicas",
+    "Reino de Umbra: A Ascensão das Sombras Esquecidas"
+  ]
+}
