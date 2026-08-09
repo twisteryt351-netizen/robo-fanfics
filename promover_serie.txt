@@ -1,0 +1,3 @@
+# Adicione um ID de história por linha (ex: h00012) pra promovê-la a série.
+# Onde achar o ID: no historico_fanfic.txt, ou no estado_fanfic.json em "historias_registradas".
+# Linhas com # são ignoradas. Máximo de 2 séries ativas ao mesmo tempo (configurável em motor_fanfic.py).

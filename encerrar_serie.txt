@@ -1,0 +1,2 @@
+# Adicione o ID de uma série ativa por linha (ex: h00012) pra encerrá-la.
+# Linhas com # são ignoradas.

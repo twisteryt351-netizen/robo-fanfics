@@ -1,0 +1,62 @@
+name: Robo de Fanfics e Historias Originais
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 14:00 UTC = 11:00 em Brasília
+  workflow_dispatch:
+
+concurrency:
+  group: fanfic-estado
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  postar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: pip install requests groq google-api-python-client google-auth-oauthlib google-auth
+
+      - name: Rodar robô de fanfics (4 histórias)
+        run: python fanfic_diario.py
+        env:
+          GROQ_API_KEY:           ${{ secrets.GROQ_API_KEY }}
+          BLOGGER_ID_FANFIC:      ${{ secrets.BLOGGER_ID_FANFIC }}
+          BLOGGER_CLIENT_ID:      ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET:  ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN:  ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          POLLINATIONS_TOKEN:     ${{ secrets.POLLINATIONS_TOKEN }}
+          IMGBB_API_KEY:          ${{ secrets.IMGBB_API_KEY }}
+
+      - name: Mostrar estado atual (debug)
+        if: always()
+        run: |
+          echo "--- estado_fanfic.json depois da execução ---"
+          cat estado_fanfic.json || echo "⚠️ estado_fanfic.json não existe!"
+
+      - name: Salvar estado e histórico
+        run: |
+          git config user.name "Robo de Fanfics"
+          git config user.email "robo@exemplo.com"
+          git add estado_fanfic.json historico_fanfic.txt promover_serie.txt encerrar_serie.txt
+
+          if git diff --cached --quiet; then
+            echo "Nada novo para commitar."
+            exit 0
+          fi
+
+          git commit -m "Atualiza estado e historico do robo de fanfics"
+
+          if ! git push; then
+            echo "Push falhou, tentando pull --rebase e push de novo..."
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
