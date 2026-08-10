@@ -9,7 +9,7 @@ from conteudo_fanfic import (
     NOMES_PROTAGONISTAS, TITULOS_SERIE_HONORIFICOS,
 )
 
-PALAVRAS_MIN = 2600
+PALAVRAS_MIN = 3400
 
 
 def escolher_universo(tipo, estado):
@@ -42,16 +42,45 @@ REGRAS DE CONTEÚDO:
 - Sem conteúdo sexual explícito, sem violência gráfica gratuita, sem discurso de ódio.
 - Tom: envolvente, cinematográfico, com ganchos que prendem o leitor até o fim.
 
+PROFUNDIDADE E RITMO (isso é pra quem gosta de ler de verdade, não um resumo):
+- Mínimo de {PALAVRAS_MIN} palavras — e use esse espaço pra desenvolver de verdade,
+  não pra encher linguiça. Construa pelo menos 3 a 4 CENAS distintas (não uma
+  cena só corrida do início ao fim).
+- Escreva DIÁLOGO REAL entre os personagens — falas completas, com personalidade
+  própria de cada um, não resumos tipo "eles conversaram sobre o plano".
+  Diálogo é uma das partes que mais prende o leitor, não economize nele.
+- Aprofunde a motivação interna do protagonista: o que ele sente, teme, deseja,
+  não só o que ele faz.
+
 REGRAS DE FORMATO (HTML puro, sem Markdown):
-- Mínimo de {PALAVRAS_MIN} palavras.
-- Abertura forte, já dentro de uma cena, sem introdução genérica.
-- Pelo menos 2 subtítulos <h2> ESPECÍFICOS da cena que introduzem (nunca rótulos
+- HOOK NO PRIMEIRO PARÁGRAFO: comece IN MEDIAS RES — uma linha de diálogo de
+  impacto, uma pergunta intrigante, uma imagem sensorial forte, ou o personagem
+  já no meio de uma decisão/ação. NUNCA comece com contexto/explicação genérica
+  ("Há muito tempo, num reino distante..." está PROIBIDO). O leitor precisa
+  querer continuar já na primeira frase.
+- Pelo menos 4 subtítulos <h2> ESPECÍFICOS da cena que introduzem (nunca rótulos
   genéricos tipo "Capítulo 1" sozinho — combine com algo que aconteceu nessa parte,
-  ex: "O Portão que Não Deveria Abrir").
+  ex: "O Portão que Não Deveria Abrir"). Cada <h2> marca uma cena/momento novo.
 - 1 a 2 <blockquote> com uma fala ou pensamento marcante de um personagem.
-- Final com gancho: uma pergunta em aberto, uma reviravolta, ou tensão que
-  deixa o leitor querendo mais (mesmo em um one-shot).
+- EXATAMENTE 3 "Notas do Autor" — comentários curtos, simpáticos e bem-humorados,
+  em primeira pessoa, como se você (o autor do blog) estivesse comentando a
+  própria história com o leitor nos bastidores (uma reação a uma cena, uma
+  confissão de bastidor, uma brincadeira leve). É o que cria comunidade com
+  quem acompanha o blog todo dia — tom sempre agradável e condizente com o
+  momento da história, nunca fora de contexto. Formate CADA UMA exatamente
+  assim (HTML literal, sem markdown):
+  <div class="nota-autor" style="background:#fff8e1;border-left:4px solid #ffb300;
+  padding:12px 16px;margin:20px 0;border-radius:6px;font-style:italic;">
+  <strong>💬 Nota do Autor:</strong> [comentário aqui]</div>
+  Posicione: a 1ª logo depois do hook de abertura, a 2ª no ponto de maior tensão
+  da história, a 3ª perto do final, antes do gancho de encerramento.
+- FINAL: feche o arco central desta história de forma satisfatória (o leitor
+  não deve sentir que ficou pela metade) — e ENTÃO adicione um parágrafo curto
+  final (2 a 4 linhas) como GANCHO para uma possível próxima aventura: uma
+  pergunta em aberto, uma ameaça que ainda espreita, uma decisão que vai ecoar.
+  É esse gancho que faz o leitor voltar amanhã.
 """
+
 
 
 def montar_prompt_one_shot(estado, tipo):
