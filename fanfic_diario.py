@@ -335,15 +335,33 @@ def montar_html(corpo_artigo, imagens_html, rodape_info):
         corpo_final = corpo_artigo
     else:
         posicoes_h2 = [m.start() for m in re.finditer(r'<h2\b', corpo_artigo, flags=re.IGNORECASE)]
-        if not posicoes_h2:
+        alvos = posicoes_h2[1:] if len(posicoes_h2) > 1 else posicoes_h2
+
+        if not alvos:
+            # nenhum <h2> pra ancorar — vai tudo pro fim, mas nunca sobreposto
             corpo_final = corpo_artigo + "".join(extras)
-        else:
-            alvos = posicoes_h2[1:] if len(posicoes_h2) > 1 else posicoes_h2
-            passo = max(1, len(alvos) // len(extras))
-            posicoes_escolhidas = [alvos[min(i * passo, len(alvos) - 1)] for i in range(len(extras))]
+        elif len(alvos) >= len(extras):
+            # âncoras suficientes: uma posição DISTINTA pra cada imagem extra
+            passo = len(alvos) / len(extras)
+            posicoes_escolhidas = sorted({alvos[int(i * passo)] for i in range(len(extras))})
+            # se a deduplicação por arredondamento colidiu, completa com âncoras livres
+            livres = [a for a in alvos if a not in posicoes_escolhidas]
+            while len(posicoes_escolhidas) < len(extras) and livres:
+                posicoes_escolhidas.append(livres.pop(0))
+            posicoes_escolhidas = sorted(posicoes_escolhidas)[:len(extras)]
+
             corpo_final = corpo_artigo
             for pos, img in sorted(zip(posicoes_escolhidas, extras), key=lambda par: -par[0]):
                 corpo_final = corpo_final[:pos] + img + corpo_final[pos:]
+        else:
+            # menos âncoras do que imagens extras: usa TODAS as âncoras
+            # disponíveis (uma imagem cada, nunca duas na mesma) e o que
+            # sobrar vai pro fim — melhor do que empilhar imagem sobre imagem
+            corpo_final = corpo_artigo
+            for pos, img in sorted(zip(alvos, extras), key=lambda par: -par[0]):
+                corpo_final = corpo_final[:pos] + img + corpo_final[pos:]
+            excedentes = extras[len(alvos):]
+            corpo_final += "".join(excedentes)
 
     rodape = (
         '<p style="font-size:12px;color:#999;font-style:italic;margin-top:24px;">'
