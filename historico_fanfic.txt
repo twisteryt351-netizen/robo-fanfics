@@ -10,3 +10,7 @@
 [h00010 | one-shot (inspirado) | TV] Vultos na Noite: Segredos Entre Cidades e Sombras
 [h00011 | one-shot (inspirado) | Anime/Mangá] Mares de Alvorada: O Tesouro que Transforma Destinos
 [h00012 | one-shot (original) | Aventura Histórica] Fronteira do Esquecimento: Expedição Além do Abismo
+[h00013 | one-shot (inspirado) | Cartoons] Equilíbrio Elemental: O Jovem Guardião dos Cinco Elementos
+[h00014 | one-shot (inspirado) | Filmes] MindSync: Guerreiros do Oceano contra a Escuridão Abissal
+[h00015 | one-shot (inspirado) | Games] Ilha da Supremacia: Sobrevivência e Traição na Terra do Último
+[h00016 | one-shot (inspirado) | Filmes] Tesouro da Destruição: Corsários da Maldição Eterna

@@ -1,5 +1,5 @@
 {
-  "proximo_id": 13,
+  "proximo_id": 17,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -85,6 +85,34 @@
       "universo_id": "expedicao_historica_perdida",
       "categoria": "Aventura Histórica",
       "resumo": "Renn lidera uma expedição para encontrar a civilização perdida de Eldrida, enfrentando perigos naturais e rivalidades internas, até finalmente descobrirem as ruínas da cidade e desvendarem seu legado."
+    },
+    "h00013": {
+      "titulo": "Equilíbrio Elemental: O Jovem Guardião dos Cinco Elementos",
+      "tipo": "inspirado",
+      "universo_id": "dominadores_elementos",
+      "categoria": "Cartoons",
+      "resumo": "Mireia, uma jovem com a capacidade de aprender e controlar todos os elementos naturais, precisa restaurar o equilíbrio do mundo após uma organização sombria tentar desequilibrá-lo. Com a ajuda de seu mentor, Kael, ela enfrenta desafios e batalhas para alcançar seu objetivo, e no final, emerge vitoriosa, mas uma nova ameaça já se aproxima."
+    },
+    "h00014": {
+      "titulo": "MindSync: Guerreiros do Oceano contra a Escuridão Abissal",
+      "tipo": "inspirado",
+      "universo_id": "gigantes_mecanicos_kaiju",
+      "categoria": "Filmes",
+      "resumo": "Talia e Axel, pilotos de robôs gigantes, lutam contra monstros marinhos conhecidos como Devoradores, e após uma batalha intensa, conseguem derrubar um deles usando a técnica de ressonância. No entanto, um aviso sobre um Devorador ainda maior os prepara para a próxima aventura."
+    },
+    "h00015": {
+      "titulo": "Ilha da Supremacia: Sobrevivência e Traição na Terra do Último",
+      "tipo": "inspirado",
+      "universo_id": "ilha_batalha_ultimo_de_pe",
+      "categoria": "Games",
+      "resumo": "Suki e Kaito formam uma aliança para sobreviver em uma ilha isolada, mas logo descobrem que a traição e a competição são parte do jogo. Eles lutam para sobreviver e encontrar o tesouro escondido, mas no final, apenas um pode ser declarado vencedor."
+    },
+    "h00016": {
+      "titulo": "Tesouro da Destruição: Corsários da Maldição Eterna",
+      "tipo": "inspirado",
+      "universo_id": "cacada_tesouro_amaldicoado",
+      "categoria": "Filmes",
+      "resumo": "Dorian e sua tripulação de corsários buscam um tesouro amaldiçoado em uma ilha misteriosa, enfrentando uma maldição sobrenatural que transforma gananciosos em monstros. No final, eles conseguem quebrar a maldição e sair da ilha com o tesouro, mas não sem antes enfrentar perigos e desafios terríveis."
     }
   },
   "historico_universos_inspirados": [
@@ -94,7 +122,11 @@
     "crianca_poderes_alienigenas",
     "heroi_escolhido_jrpg",
     "dupla_investigacao_sobrenatural",
-    "piratas_tesouro_lendario"
+    "piratas_tesouro_lendario",
+    "dominadores_elementos",
+    "gigantes_mecanicos_kaiju",
+    "ilha_batalha_ultimo_de_pe",
+    "cacada_tesouro_amaldicoado"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -115,6 +147,10 @@
     "Horizonte de Ruínas: Além da Linha do Silêncio",
     "Vultos na Noite: Segredos Entre Cidades e Sombras",
     "Mares de Alvorada: O Tesouro que Transforma Destinos",
-    "Fronteira do Esquecimento: Expedição Além do Abismo"
+    "Fronteira do Esquecimento: Expedição Além do Abismo",
+    "Equilíbrio Elemental: O Jovem Guardião dos Cinco Elementos",
+    "MindSync: Guerreiros do Oceano contra a Escuridão Abissal",
+    "Ilha da Supremacia: Sobrevivência e Traição na Terra do Último",
+    "Tesouro da Destruição: Corsários da Maldição Eterna"
   ]
 }
