@@ -6,3 +6,7 @@
 [h00006 | one-shot (original) | Drama/Coming-of-age] Palco de Sombras: Rivalidade e Autoconhecimento na Escola de Artes Estrela
 [h00007 | one-shot (inspirado) | Cartoons] Guardiões do Cosmos: Descobrindo Formas Além do Infinito
 [h00008 | one-shot (inspirado) | Games] Crono do Destino: O Renascimento do Guardião Eterno
+[h00009 | one-shot (original) | Horror/Sobrevivência] Horizonte de Ruínas: Além da Linha do Silêncio
+[h00010 | one-shot (inspirado) | TV] Vultos na Noite: Segredos Entre Cidades e Sombras
+[h00011 | one-shot (inspirado) | Anime/Mangá] Mares de Alvorada: O Tesouro que Transforma Destinos
+[h00012 | one-shot (original) | Aventura Histórica] Fronteira do Esquecimento: Expedição Além do Abismo

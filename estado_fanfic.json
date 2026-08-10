@@ -1,5 +1,5 @@
 {
-  "proximo_id": 9,
+  "proximo_id": 13,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -57,6 +57,34 @@
       "universo_id": "heroi_escolhido_jrpg",
       "categoria": "Games",
       "resumo": "Soren, um jovem comum, descobre ser o escolhido de uma profecia antiga e reúne um grupo variado para enfrentar um mal ressurgente, levando a uma batalha épica contra criaturas sombrias."
+    },
+    "h00009": {
+      "titulo": "Horizonte de Ruínas: Além da Linha do Silêncio",
+      "tipo": "original",
+      "universo_id": "sobrevivencia_pos_colapso",
+      "categoria": "Horror/Sobrevivência",
+      "resumo": "Em um mundo pós-colapso, um grupo de sobreviventes liderados por Theron enfrenta desafios internos e externos, descobrindo que a verdadeira ameaça pode não ser o que está lá fora, mas o que está dentro deles mesmos. Eles encontram uma mulher infectada por uma entidade parasita e a ajudam a se livrar dela, mas percebem que isso é apenas o começo de uma luta muito maior."
+    },
+    "h00010": {
+      "titulo": "Vultos na Noite: Segredos Entre Cidades e Sombras",
+      "tipo": "inspirado",
+      "universo_id": "dupla_investigacao_sobrenatural",
+      "categoria": "TV",
+      "resumo": "Nyla e Arin investigam fenômenos sobrenaturais em diferentes cidades, escondendo um segredo pessoal, até que se deparam com uma entidade antiga que está levando pessoas. Com a ajuda de uma misteriosa mulher chamada Elara, eles conseguem derrotar a entidade e salvar a cidade, continuando sua jornada em busca de respostas e proteção."
+    },
+    "h00011": {
+      "titulo": "Mares de Alvorada: O Tesouro que Transforma Destinos",
+      "tipo": "inspirado",
+      "universo_id": "piratas_tesouro_lendario",
+      "categoria": "Anime/Mangá",
+      "resumo": "A tripulação do Maelstrom encontra o Tesouro de Krael, um tesouro lendário que muda quem o encontra, e deve aprender a controlar seu poder para o bem de todos, enquanto uma figura sombria observa de longe, planejando conquistá-lo."
+    },
+    "h00012": {
+      "titulo": "Fronteira do Esquecimento: Expedição Além do Abismo",
+      "tipo": "original",
+      "universo_id": "expedicao_historica_perdida",
+      "categoria": "Aventura Histórica",
+      "resumo": "Renn lidera uma expedição para encontrar a civilização perdida de Eldrida, enfrentando perigos naturais e rivalidades internas, até finalmente descobrirem as ruínas da cidade e desvendarem seu legado."
     }
   },
   "historico_universos_inspirados": [
@@ -64,12 +92,16 @@
     "grupo_masmorra_classes",
     "escola_herois_poderes",
     "crianca_poderes_alienigenas",
-    "heroi_escolhido_jrpg"
+    "heroi_escolhido_jrpg",
+    "dupla_investigacao_sobrenatural",
+    "piratas_tesouro_lendario"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
     "reino_fantasia_guerra_sucessao",
-    "escola_talentos_ocultos"
+    "escola_talentos_ocultos",
+    "sobrevivencia_pos_colapso",
+    "expedicao_historica_perdida"
   ],
   "historico_titulos": [
     "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
@@ -79,6 +111,10 @@
     "Aurora dos Campeões: Academia de Elite para Jovens Talentos Sobrenaturais",
     "Palco de Sombras: Rivalidade e Autoconhecimento na Escola de Artes Estrela",
     "Guardiões do Cosmos: Descobrindo Formas Além do Infinito",
-    "Crono do Destino: O Renascimento do Guardião Eterno"
+    "Crono do Destino: O Renascimento do Guardião Eterno",
+    "Horizonte de Ruínas: Além da Linha do Silêncio",
+    "Vultos na Noite: Segredos Entre Cidades e Sombras",
+    "Mares de Alvorada: O Tesouro que Transforma Destinos",
+    "Fronteira do Esquecimento: Expedição Além do Abismo"
   ]
 }
