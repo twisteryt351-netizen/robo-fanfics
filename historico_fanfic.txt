@@ -14,3 +14,7 @@
 [h00014 | one-shot (inspirado) | Filmes] MindSync: Guerreiros do Oceano contra a Escuridão Abissal
 [h00015 | one-shot (inspirado) | Games] Ilha da Supremacia: Sobrevivência e Traição na Terra do Último
 [h00016 | one-shot (inspirado) | Filmes] Tesouro da Destruição: Corsários da Maldição Eterna
+[h00017 | one-shot (inspirado) | Quadrinhos] Sombra da Justiça: Renascimento de um Herói Anônimo
+[h00018 | one-shot (original) | Fantasia Ecológica] Sussurros da Terra: Protetores da Floresta contra a Sombra Industrial
+[h00019 | one-shot (original) | Ficção Científica] Colônia Êxodo: Entre a Sombra Digital e o Último Refúgio
+[h00020 | one-shot (inspirado) | Anime/Mangá] Círculo de Artes: Segredos e Rivalidades no Torneio das Sombras

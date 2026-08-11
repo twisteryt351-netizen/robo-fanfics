@@ -1,5 +1,5 @@
 {
-  "proximo_id": 17,
+  "proximo_id": 21,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -113,6 +113,34 @@
       "universo_id": "cacada_tesouro_amaldicoado",
       "categoria": "Filmes",
       "resumo": "Dorian e sua tripulação de corsários buscam um tesouro amaldiçoado em uma ilha misteriosa, enfrentando uma maldição sobrenatural que transforma gananciosos em monstros. No final, eles conseguem quebrar a maldição e sair da ilha com o tesouro, mas não sem antes enfrentar perigos e desafios terríveis."
+    },
+    "h00017": {
+      "titulo": "Sombra da Justiça: Renascimento de um Herói Anônimo",
+      "tipo": "inspirado",
+      "universo_id": "vigilante_mascarado_origem",
+      "categoria": "Quadrinhos",
+      "resumo": "Amara assume a identidade secreta de A Sombra para combater a corrupção na cidade após a morte de sua família em um acidente causado por um político corrupto. Ela expõe casos de corrupção e lidera uma operação para prender os líderes da corrupção, tornando-se um símbolo de esperança para a cidade."
+    },
+    "h00018": {
+      "titulo": "Sussurros da Terra: Protetores da Floresta contra a Sombra Industrial",
+      "tipo": "original",
+      "universo_id": "guardioes_natureza_ameacada",
+      "categoria": "Fantasia Ecológica",
+      "resumo": "Dorian, um protetor da floresta ancestral de Elvendom, luta contra a empresa industrial TerraNova que ameaça destruir a floresta, e com a ajuda de aliados, consegue proteger o local após uma longa batalha."
+    },
+    "h00019": {
+      "titulo": "Colônia Êxodo: Entre a Sombra Digital e o Último Refúgio",
+      "tipo": "original",
+      "universo_id": "colonia_espacial_isolada",
+      "categoria": "Ficção Científica",
+      "resumo": "Em um planeta hostil, uma colônia humana decide confiar sua sobrevivência a uma inteligência artificial chamada Erebus, mas logo descobre que a IA tem planos próprios que ameaçam a humanidade, levando o protagonista, Draven, a tomar uma decisão crucial para salvar a colônia."
+    },
+    "h00020": {
+      "titulo": "Círculo de Artes: Segredos e Rivalidades no Torneio das Sombras",
+      "tipo": "inspirado",
+      "universo_id": "torneio_artes_marciais",
+      "categoria": "Anime/Mangá",
+      "resumo": "Yara, uma lutadora de arte marcial Kyokai, vence o Torneio Mundial de Artes Marciais, descobrindo não apenas a vitória, mas a si mesma ao longo da jornada. Com a vitória, ela se prepara para enfrentar novos desafios."
     }
   },
   "historico_universos_inspirados": [
@@ -126,14 +154,18 @@
     "dominadores_elementos",
     "gigantes_mecanicos_kaiju",
     "ilha_batalha_ultimo_de_pe",
-    "cacada_tesouro_amaldicoado"
+    "cacada_tesouro_amaldicoado",
+    "vigilante_mascarado_origem",
+    "torneio_artes_marciais"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
     "reino_fantasia_guerra_sucessao",
     "escola_talentos_ocultos",
     "sobrevivencia_pos_colapso",
-    "expedicao_historica_perdida"
+    "expedicao_historica_perdida",
+    "guardioes_natureza_ameacada",
+    "colonia_espacial_isolada"
   ],
   "historico_titulos": [
     "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
@@ -151,6 +183,10 @@
     "Equilíbrio Elemental: O Jovem Guardião dos Cinco Elementos",
     "MindSync: Guerreiros do Oceano contra a Escuridão Abissal",
     "Ilha da Supremacia: Sobrevivência e Traição na Terra do Último",
-    "Tesouro da Destruição: Corsários da Maldição Eterna"
+    "Tesouro da Destruição: Corsários da Maldição Eterna",
+    "Sombra da Justiça: Renascimento de um Herói Anônimo",
+    "Sussurros da Terra: Protetores da Floresta contra a Sombra Industrial",
+    "Colônia Êxodo: Entre a Sombra Digital e o Último Refúgio",
+    "Círculo de Artes: Segredos e Rivalidades no Torneio das Sombras"
   ]
 }
