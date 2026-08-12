@@ -18,3 +18,7 @@
 [h00018 | one-shot (original) | Fantasia Ecológica] Sussurros da Terra: Protetores da Floresta contra a Sombra Industrial
 [h00019 | one-shot (original) | Ficção Científica] Colônia Êxodo: Entre a Sombra Digital e o Último Refúgio
 [h00020 | one-shot (inspirado) | Anime/Mangá] Círculo de Artes: Segredos e Rivalidades no Torneio das Sombras
+[h00021 | one-shot (inspirado) | Filmes] Gênese Oculta: Enigmas e Verdades na Fronteira entre Luz e Escuridão
+[h00022 | one-shot (inspirado) | Quadrinhos] Arqueia: Alinhamento de Poderes Contra o Caos Eterno
+[h00023 | one-shot (inspirado) | Livros] Arena da Opressão: Sobrevivência Forçada na Sombra do Poder
+[h00024 | one-shot (inspirado) | Livros] Arcanae: Segredos Enterrados nos Porões do Castelo da Magia

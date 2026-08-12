@@ -1,5 +1,5 @@
 {
-  "proximo_id": 21,
+  "proximo_id": 25,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -141,6 +141,34 @@
       "universo_id": "torneio_artes_marciais",
       "categoria": "Anime/Mangá",
       "resumo": "Yara, uma lutadora de arte marcial Kyokai, vence o Torneio Mundial de Artes Marciais, descobrindo não apenas a vitória, mas a si mesma ao longo da jornada. Com a vitória, ela se prepara para enfrentar novos desafios."
+    },
+    "h00021": {
+      "titulo": "Gênese Oculta: Enigmas e Verdades na Fronteira entre Luz e Escuridão",
+      "tipo": "inspirado",
+      "universo_id": "mutantes_escondidos",
+      "categoria": "Filmes",
+      "resumo": "Jovens com habilidades genéticas únicas lutam por aceitação em uma sociedade que os vê com medo e desconfiança, e um evento crucial pode mudar tudo."
+    },
+    "h00022": {
+      "titulo": "Arqueia: Alinhamento de Poderes Contra o Caos Eterno",
+      "tipo": "inspirado",
+      "universo_id": "equipe_poderes_diferentes",
+      "categoria": "Quadrinhos",
+      "resumo": "Um grupo de indivíduos com poderes especiais diferentes é forçado a cooperar contra uma ameaça comum, uma organização secreta que busca capturá-los. Após uma série de desafios e batalhas, eles conseguem derrotar a organização e decidem seguir caminhos separados, mas com a promessa de sempre estarem prontos para ajudar uns aos outros."
+    },
+    "h00023": {
+      "titulo": "Arena da Opressão: Sobrevivência Forçada na Sombra do Poder",
+      "tipo": "inspirado",
+      "universo_id": "jogos_sobrevivencia_distopia",
+      "categoria": "Livros",
+      "resumo": "Wren e Kael são forçados a competir em uma arena de sobrevivência criada pelo governo autoritário, mas após a morte de Kael, Wren se une a outros jovens para lutar contra o Conselho e escapar da arena."
+    },
+    "h00024": {
+      "titulo": "Arcanae: Segredos Enterrados nos Porões do Castelo da Magia",
+      "tipo": "inspirado",
+      "universo_id": "escola_magia_oculta",
+      "categoria": "Livros",
+      "resumo": "Wren e seus amigos descobrem um segredo antigo nos porões do castelo da Escola de Magia de Eldrid, que muda tudo o que eles pensavam saber sobre a instituição e as casas rivais. Eles decidem expor a verdade, o que leva a uma mudança na escola, mas deixa muitas perguntas em aberto para o futuro."
     }
   },
   "historico_universos_inspirados": [
@@ -156,7 +184,11 @@
     "ilha_batalha_ultimo_de_pe",
     "cacada_tesouro_amaldicoado",
     "vigilante_mascarado_origem",
-    "torneio_artes_marciais"
+    "torneio_artes_marciais",
+    "mutantes_escondidos",
+    "equipe_poderes_diferentes",
+    "jogos_sobrevivencia_distopia",
+    "escola_magia_oculta"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -187,6 +219,10 @@
     "Sombra da Justiça: Renascimento de um Herói Anônimo",
     "Sussurros da Terra: Protetores da Floresta contra a Sombra Industrial",
     "Colônia Êxodo: Entre a Sombra Digital e o Último Refúgio",
-    "Círculo de Artes: Segredos e Rivalidades no Torneio das Sombras"
+    "Círculo de Artes: Segredos e Rivalidades no Torneio das Sombras",
+    "Gênese Oculta: Enigmas e Verdades na Fronteira entre Luz e Escuridão",
+    "Arqueia: Alinhamento de Poderes Contra o Caos Eterno",
+    "Arena da Opressão: Sobrevivência Forçada na Sombra do Poder",
+    "Arcanae: Segredos Enterrados nos Porões do Castelo da Magia"
   ]
 }
