@@ -1,5 +1,5 @@
 {
-  "proximo_id": 25,
+  "proximo_id": 29,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -169,6 +169,34 @@
       "universo_id": "escola_magia_oculta",
       "categoria": "Livros",
       "resumo": "Wren e seus amigos descobrem um segredo antigo nos porões do castelo da Escola de Magia de Eldrid, que muda tudo o que eles pensavam saber sobre a instituição e as casas rivais. Eles decidem expor a verdade, o que leva a uma mudança na escola, mas deixa muitas perguntas em aberto para o futuro."
+    },
+    "h00025": {
+      "titulo": "Poderes em Chamas: Evolução dos Guerreiros contra a Devastação Planetária",
+      "tipo": "inspirado",
+      "universo_id": "torneio_poder_cosmico",
+      "categoria": "Anime/Mangá",
+      "resumo": "Theron e Lyra derrotam um monstro que ameaçava destruir o planeta, mas Theron descobre um novo poder dentro de si que precisa ser entendido. O que acontecerá em seguida é um mistério."
+    },
+    "h00026": {
+      "titulo": "Horizontes Cruzados: Onde o Destino se Encontra na Fronteira da Incerteza",
+      "tipo": "original",
+      "universo_id": "romance_dois_mundos",
+      "categoria": "Romance",
+      "resumo": "Cass e Elara, dois indivíduos de mundos diferentes, se encontram por acaso e decidem arriscar tudo um pelo outro, enfrentando perigos e desafios ao longo do caminho. Será que sua parceria e amor serão suficientes para superar os obstáculos que os aguardam?"
+    },
+    "h00027": {
+      "titulo": "Ordem dos Vigilantes: Caçadores de Sombras na Linha de Frente Contra a Escuridão",
+      "tipo": "inspirado",
+      "universo_id": "cacadores_demonios",
+      "categoria": "Anime/Mangá",
+      "resumo": "Amara, uma jovem caçadora de espíritos, derrota o poderoso espírito corrompido O Devorador de Almas e se torna uma verdadeira heroína, pronta para enfrentar os desafios do futuro."
+    },
+    "h00028": {
+      "titulo": "Estrelas da Vontade: Guardiões Celestiais contra a Invasão Tenebrosa",
+      "tipo": "inspirado",
+      "universo_id": "armaduras_constelacao",
+      "categoria": "Anime/Mangá",
+      "resumo": "Renn, um protetor com armadura ligada à constelação de Órion, defende a deusa reencarnada Aria contra as forças do submundo, lideradas por um poderoso inimigo, e consegue fechar o portão que liga o mundo dos vivos ao submundo."
     }
   },
   "historico_universos_inspirados": [
@@ -188,7 +216,10 @@
     "mutantes_escondidos",
     "equipe_poderes_diferentes",
     "jogos_sobrevivencia_distopia",
-    "escola_magia_oculta"
+    "escola_magia_oculta",
+    "torneio_poder_cosmico",
+    "cacadores_demonios",
+    "armaduras_constelacao"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -197,7 +228,8 @@
     "sobrevivencia_pos_colapso",
     "expedicao_historica_perdida",
     "guardioes_natureza_ameacada",
-    "colonia_espacial_isolada"
+    "colonia_espacial_isolada",
+    "romance_dois_mundos"
   ],
   "historico_titulos": [
     "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
@@ -223,6 +255,10 @@
     "Gênese Oculta: Enigmas e Verdades na Fronteira entre Luz e Escuridão",
     "Arqueia: Alinhamento de Poderes Contra o Caos Eterno",
     "Arena da Opressão: Sobrevivência Forçada na Sombra do Poder",
-    "Arcanae: Segredos Enterrados nos Porões do Castelo da Magia"
+    "Arcanae: Segredos Enterrados nos Porões do Castelo da Magia",
+    "Poderes em Chamas: Evolução dos Guerreiros contra a Devastação Planetária",
+    "Horizontes Cruzados: Onde o Destino se Encontra na Fronteira da Incerteza",
+    "Ordem dos Vigilantes: Caçadores de Sombras na Linha de Frente Contra a Escuridão",
+    "Estrelas da Vontade: Guardiões Celestiais contra a Invasão Tenebrosa"
   ]
 }

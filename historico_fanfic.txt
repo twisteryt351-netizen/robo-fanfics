@@ -22,3 +22,7 @@
 [h00022 | one-shot (inspirado) | Quadrinhos] Arqueia: Alinhamento de Poderes Contra o Caos Eterno
 [h00023 | one-shot (inspirado) | Livros] Arena da Opressão: Sobrevivência Forçada na Sombra do Poder
 [h00024 | one-shot (inspirado) | Livros] Arcanae: Segredos Enterrados nos Porões do Castelo da Magia
+[h00025 | one-shot (inspirado) | Anime/Mangá] Poderes em Chamas: Evolução dos Guerreiros contra a Devastação Planetária
+[h00026 | one-shot (original) | Romance] Horizontes Cruzados: Onde o Destino se Encontra na Fronteira da Incerteza
+[h00027 | one-shot (inspirado) | Anime/Mangá] Ordem dos Vigilantes: Caçadores de Sombras na Linha de Frente Contra a Escuridão
+[h00028 | one-shot (inspirado) | Anime/Mangá] Estrelas da Vontade: Guardiões Celestiais contra a Invasão Tenebrosa
