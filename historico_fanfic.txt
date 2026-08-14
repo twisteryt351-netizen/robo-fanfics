@@ -26,3 +26,7 @@
 [h00026 | one-shot (original) | Romance] Horizontes Cruzados: Onde o Destino se Encontra na Fronteira da Incerteza
 [h00027 | one-shot (inspirado) | Anime/Mangá] Ordem dos Vigilantes: Caçadores de Sombras na Linha de Frente Contra a Escuridão
 [h00028 | one-shot (inspirado) | Anime/Mangá] Estrelas da Vontade: Guardiões Celestiais contra a Invasão Tenebrosa
+[h00029 | one-shot (original) | Mistério] Herança de Silêncio: Desvendando Segredos Familiares Entre a Luz e a Sombra
+[h00030 | one-shot (inspirado) | Livros] Sangue e Lealdade: Guardiões da Noite na Sombra dos Imortais
+[h00031 | one-shot (inspirado) | TV] Mentes Beyond: Desvendando Enigmas na Cidade dos Segredos
+[h00032 | one-shot (inspirado) | TV] Fronteira Além da Realidade: Monstros na Sombra do Subúrbio

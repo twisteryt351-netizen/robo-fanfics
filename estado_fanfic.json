@@ -1,5 +1,5 @@
 {
-  "proximo_id": 29,
+  "proximo_id": 33,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -197,12 +197,37 @@
       "universo_id": "armaduras_constelacao",
       "categoria": "Anime/Mangá",
       "resumo": "Renn, um protetor com armadura ligada à constelação de Órion, defende a deusa reencarnada Aria contra as forças do submundo, lideradas por um poderoso inimigo, e consegue fechar o portão que liga o mundo dos vivos ao submundo."
+    },
+    "h00029": {
+      "titulo": "Herança de Silêncio: Desvendando Segredos Familiares Entre a Luz e a Sombra",
+      "tipo": "original",
+      "universo_id": "investigacao_familia_segredo",
+      "categoria": "Mistério",
+      "resumo": "Dorian descobre que sua família está envolvida em um esquema de lavagem de dinheiro e decide revelar a verdade, mesmo sabendo que isso pode ter consequências graves para ele e sua família. Ele perde tudo, mas ganha a sua dignidade e começa a reconstruir a sua vida, mas uma figura sombria está observando ele de longe, determinada a fazer com que Dorian pague pelo que fez."
+    },
+    "h00030": {
+      "titulo": "Sangue e Lealdade: Guardiões da Noite na Sombra dos Imortais",
+      "tipo": "inspirado",
+      "universo_id": "academia_vampiros",
+      "categoria": "Livros",
+      "resumo": "Kaian, um guardião, luta para proteger seu amor proibido por uma vampira chamada Lyra, enquanto enfrenta ameaças externas e internas, e no final consegue mudar as regras da academia e garantir a segurança da linhagem de vampiros."
+    },
+    "h00031": {
+      "titulo": "Mentes Beyond: Desvendando Enigmas na Cidade dos Segredos",
+      "tipo": "inspirado",
+      "universo_id": "detetive_mente_brilhante",
+      "categoria": "TV",
+      "resumo": "Mireia, uma detetive com raciocínio fora do comum, resolve um caso de assassinato em uma metrópole cheia de segredos, e recebe um novo caso de um desconhecido enquanto está saindo da delegacia."
+    },
+    "h00032": {
+      "titulo": "Fronteira Além da Realidade: Monstros na Sombra do Subúrbio",
+      "tipo": "inspirado",
+      "universo_id": "cidade_pequena_portal_estranho",
+      "categoria": "TV",
+      "resumo": "Vesper e seus amigos descobrem uma dimensão paralela que está invadindo sua cidade, e eles precisam encontrar uma maneira de fechá-la antes que seja tarde demais. Eles lutam contra monstros e finalmente conseguem destruir a fonte de energia que alimentava a dimensão paralela, mas a ameaça ainda espreita nas sombras."
     }
   },
   "historico_universos_inspirados": [
-    "vila_oculta_guerreiros",
-    "grupo_masmorra_classes",
-    "escola_herois_poderes",
     "crianca_poderes_alienigenas",
     "heroi_escolhido_jrpg",
     "dupla_investigacao_sobrenatural",
@@ -219,7 +244,10 @@
     "escola_magia_oculta",
     "torneio_poder_cosmico",
     "cacadores_demonios",
-    "armaduras_constelacao"
+    "armaduras_constelacao",
+    "academia_vampiros",
+    "detetive_mente_brilhante",
+    "cidade_pequena_portal_estranho"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -229,7 +257,8 @@
     "expedicao_historica_perdida",
     "guardioes_natureza_ameacada",
     "colonia_espacial_isolada",
-    "romance_dois_mundos"
+    "romance_dois_mundos",
+    "investigacao_familia_segredo"
   ],
   "historico_titulos": [
     "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
@@ -259,6 +288,10 @@
     "Poderes em Chamas: Evolução dos Guerreiros contra a Devastação Planetária",
     "Horizontes Cruzados: Onde o Destino se Encontra na Fronteira da Incerteza",
     "Ordem dos Vigilantes: Caçadores de Sombras na Linha de Frente Contra a Escuridão",
-    "Estrelas da Vontade: Guardiões Celestiais contra a Invasão Tenebrosa"
+    "Estrelas da Vontade: Guardiões Celestiais contra a Invasão Tenebrosa",
+    "Herança de Silêncio: Desvendando Segredos Familiares Entre a Luz e a Sombra",
+    "Sangue e Lealdade: Guardiões da Noite na Sombra dos Imortais",
+    "Mentes Beyond: Desvendando Enigmas na Cidade dos Segredos",
+    "Fronteira Além da Realidade: Monstros na Sombra do Subúrbio"
   ]
 }
