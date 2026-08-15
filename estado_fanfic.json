@@ -1,5 +1,5 @@
 {
-  "proximo_id": 33,
+  "proximo_id": 37,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -225,13 +225,37 @@
       "universo_id": "cidade_pequena_portal_estranho",
       "categoria": "TV",
       "resumo": "Vesper e seus amigos descobrem uma dimensão paralela que está invadindo sua cidade, e eles precisam encontrar uma maneira de fechá-la antes que seja tarde demais. Eles lutam contra monstros e finalmente conseguem destruir a fonte de energia que alimentava a dimensão paralela, mas a ameaça ainda espreita nas sombras."
+    },
+    "h00033": {
+      "titulo": "Corações de Aço e Magia: Expedição Lendária pelas Profundezas Esquecidas",
+      "tipo": "inspirado",
+      "universo_id": "grupo_masmorra_classes",
+      "categoria": "Games",
+      "resumo": "Um grupo de aventureiros explora o Templo do Fogo Eterno em busca do anel de fogo, enfrentando desafios e perigos ao longo do caminho. Eles finalmente conseguem o anel, mas precisam decidir como usá-lo, enquanto uma figura misteriosa os observa das sombras."
+    },
+    "h00034": {
+      "titulo": "Cruzada Sombria: Oúltimo Bastião Contra a Corrupção Eterna",
+      "tipo": "inspirado",
+      "universo_id": "jornada_anel_poder",
+      "categoria": "Livros",
+      "resumo": "Orin e sua comitiva enfrentam perigos para destruir o Olho de Zorvath, um artefato corrompido que ameaça o mundo. Com determinação e união, eles superam desafios e destróem o artefato, mas uma nova ameaça surge no horizonte."
+    },
+    "h00035": {
+      "titulo": "Nebulosa de Lâminas: Clãs Esquecidos e Artefatos Perdidos no Coração das Montanhas",
+      "tipo": "inspirado",
+      "universo_id": "vila_oculta_guerreiros",
+      "categoria": "Anime/Mangá",
+      "resumo": "Nyla, uma jovem ninja do clã Kagekure, vence o torneio anual da vila ninja, derrotando Ryker do clã rival Akakawa, e se torna a próxima grande guerreira de Kagekure."
+    },
+    "h00036": {
+      "titulo": "Sombra de Família: Expedição ao Desconhecido Entre Cidades e Segredos",
+      "tipo": "inspirado",
+      "universo_id": "dupla_investigacao_sobrenatural",
+      "categoria": "TV",
+      "resumo": "Kohl e Lyra, uma dupla que investiga fenômenos sobrenaturais, descobrem um segredo sombrio ligado à sua família e decidem seguir um novo caminho como guardiões do equilíbrio entre o mundo natural e o sobrenatural."
     }
   },
   "historico_universos_inspirados": [
-    "crianca_poderes_alienigenas",
-    "heroi_escolhido_jrpg",
-    "dupla_investigacao_sobrenatural",
-    "piratas_tesouro_lendario",
     "dominadores_elementos",
     "gigantes_mecanicos_kaiju",
     "ilha_batalha_ultimo_de_pe",
@@ -247,7 +271,11 @@
     "armaduras_constelacao",
     "academia_vampiros",
     "detetive_mente_brilhante",
-    "cidade_pequena_portal_estranho"
+    "cidade_pequena_portal_estranho",
+    "grupo_masmorra_classes",
+    "jornada_anel_poder",
+    "vila_oculta_guerreiros",
+    "dupla_investigacao_sobrenatural"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -292,6 +320,10 @@
     "Herança de Silêncio: Desvendando Segredos Familiares Entre a Luz e a Sombra",
     "Sangue e Lealdade: Guardiões da Noite na Sombra dos Imortais",
     "Mentes Beyond: Desvendando Enigmas na Cidade dos Segredos",
-    "Fronteira Além da Realidade: Monstros na Sombra do Subúrbio"
+    "Fronteira Além da Realidade: Monstros na Sombra do Subúrbio",
+    "Corações de Aço e Magia: Expedição Lendária pelas Profundezas Esquecidas",
+    "Cruzada Sombria: Oúltimo Bastião Contra a Corrupção Eterna",
+    "Nebulosa de Lâminas: Clãs Esquecidos e Artefatos Perdidos no Coração das Montanhas",
+    "Sombra de Família: Expedição ao Desconhecido Entre Cidades e Segredos"
   ]
 }

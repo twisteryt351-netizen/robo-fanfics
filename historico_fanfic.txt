@@ -30,3 +30,7 @@
 [h00030 | one-shot (inspirado) | Livros] Sangue e Lealdade: Guardiões da Noite na Sombra dos Imortais
 [h00031 | one-shot (inspirado) | TV] Mentes Beyond: Desvendando Enigmas na Cidade dos Segredos
 [h00032 | one-shot (inspirado) | TV] Fronteira Além da Realidade: Monstros na Sombra do Subúrbio
+[h00033 | one-shot (inspirado) | Games] Corações de Aço e Magia: Expedição Lendária pelas Profundezas Esquecidas
+[h00034 | one-shot (inspirado) | Livros] Cruzada Sombria: Oúltimo Bastião Contra a Corrupção Eterna
+[h00035 | one-shot (inspirado) | Anime/Mangá] Nebulosa de Lâminas: Clãs Esquecidos e Artefatos Perdidos no Coração das Montanhas
+[h00036 | one-shot (inspirado) | TV] Sombra de Família: Expedição ao Desconhecido Entre Cidades e Segredos
