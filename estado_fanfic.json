@@ -1,5 +1,5 @@
 {
-  "proximo_id": 37,
+  "proximo_id": 41,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -253,6 +253,34 @@
       "universo_id": "dupla_investigacao_sobrenatural",
       "categoria": "TV",
       "resumo": "Kohl e Lyra, uma dupla que investiga fenômenos sobrenaturais, descobrem um segredo sombrio ligado à sua família e decidem seguir um novo caminho como guardiões do equilíbrio entre o mundo natural e o sobrenatural."
+    },
+    "h00037": {
+      "titulo": "Sombras Sob o Big Top: Segredos e Poderes Escondidos sob a Luz dos Holofotes",
+      "tipo": "original",
+      "universo_id": "circo_itinerante_segredos",
+      "categoria": "Drama/Fantasia",
+      "resumo": "Orin, um mágico com a habilidade de manipular memórias, e Elara, uma trapezista com o poder de controlar o vento, descobrem uma cidade secreta para sobrenaturais e decidem usar seus poderes para proteger o mundo."
+    },
+    "h00038": {
+      "titulo": "Guardiões da Terra Esquecida: Onde a Memória da Natureza se Ergue Contra o Silêncio da Destruição",
+      "tipo": "original",
+      "universo_id": "guardioes_natureza_ameacada",
+      "categoria": "Fantasia Ecológica",
+      "resumo": "Arden, um protetor ancestral da floresta de Elvendom, luta para salvar a memória da terra de ser destruída pela indústria, e no processo, descobre o poder da união e da conexão com a natureza."
+    },
+    "h00039": {
+      "titulo": "Cidade Oculta: Crimes sem Rastros na Fronteira da Magia e da Tecnologia",
+      "tipo": "original",
+      "universo_id": "detetive_urbano_sobrenatural",
+      "categoria": "Urban Fantasy",
+      "resumo": "Talia investiga um crime paranormal e descobre um culto praticando magia negra, levando a uma confrontação intensa e uma resolução inesperada."
+    },
+    "h00040": {
+      "titulo": "Ecos do Palco: Rivalidade e Autoconhecimento na Sinfonia da Ambição",
+      "tipo": "original",
+      "universo_id": "escola_talentos_ocultos",
+      "categoria": "Drama/Coming-of-age",
+      "resumo": "Suki e Kaito, dois jovens talentosos, lidam com pressão e rivalidade na escola de artes de Ashihama, mas descobrem que a verdadeira arte vem do coração, e juntos criam algo que transcende a competitividade."
     }
   },
   "historico_universos_inspirados": [
@@ -286,7 +314,11 @@
     "guardioes_natureza_ameacada",
     "colonia_espacial_isolada",
     "romance_dois_mundos",
-    "investigacao_familia_segredo"
+    "investigacao_familia_segredo",
+    "circo_itinerante_segredos",
+    "guardioes_natureza_ameacada",
+    "detetive_urbano_sobrenatural",
+    "escola_talentos_ocultos"
   ],
   "historico_titulos": [
     "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
@@ -324,6 +356,10 @@
     "Corações de Aço e Magia: Expedição Lendária pelas Profundezas Esquecidas",
     "Cruzada Sombria: Oúltimo Bastião Contra a Corrupção Eterna",
     "Nebulosa de Lâminas: Clãs Esquecidos e Artefatos Perdidos no Coração das Montanhas",
-    "Sombra de Família: Expedição ao Desconhecido Entre Cidades e Segredos"
+    "Sombra de Família: Expedição ao Desconhecido Entre Cidades e Segredos",
+    "Sombras Sob o Big Top: Segredos e Poderes Escondidos sob a Luz dos Holofotes",
+    "Guardiões da Terra Esquecida: Onde a Memória da Natureza se Ergue Contra o Silêncio da Destruição",
+    "Cidade Oculta: Crimes sem Rastros na Fronteira da Magia e da Tecnologia",
+    "Ecos do Palco: Rivalidade e Autoconhecimento na Sinfonia da Ambição"
   ]
 }

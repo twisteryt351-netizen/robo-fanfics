@@ -34,3 +34,7 @@
 [h00034 | one-shot (inspirado) | Livros] Cruzada Sombria: Oúltimo Bastião Contra a Corrupção Eterna
 [h00035 | one-shot (inspirado) | Anime/Mangá] Nebulosa de Lâminas: Clãs Esquecidos e Artefatos Perdidos no Coração das Montanhas
 [h00036 | one-shot (inspirado) | TV] Sombra de Família: Expedição ao Desconhecido Entre Cidades e Segredos
+[h00037 | one-shot (original) | Drama/Fantasia] Sombras Sob o Big Top: Segredos e Poderes Escondidos sob a Luz dos Holofotes
+[h00038 | one-shot (original) | Fantasia Ecológica] Guardiões da Terra Esquecida: Onde a Memória da Natureza se Ergue Contra o Silêncio da Destruição
+[h00039 | one-shot (original) | Urban Fantasy] Cidade Oculta: Crimes sem Rastros na Fronteira da Magia e da Tecnologia
+[h00040 | one-shot (original) | Drama/Coming-of-age] Ecos do Palco: Rivalidade e Autoconhecimento na Sinfonia da Ambição
