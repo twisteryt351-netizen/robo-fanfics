@@ -1,5 +1,5 @@
 {
-  "proximo_id": 45,
+  "proximo_id": 47,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -309,11 +309,23 @@
       "universo_id": "gigantes_mecanicos_kaiju",
       "categoria": "Filmes",
       "resumo": "Kael e Lyra, dois pilotos de robôs gigantes, lutam contra monstros marinhos colossais que ameaçam a humanidade, e após uma batalha intensa, conseguem derrotar o inimigo, mas sabem que novos desafios estão por vir."
+    },
+    "h00045": {
+      "titulo": "O Herdeiro do Destino: Além da Profecia, uma Nova Era de Sombras e Redenção",
+      "tipo": "inspirado",
+      "universo_id": "heroi_escolhido_jrpg",
+      "categoria": "Games",
+      "resumo": "Nyla, uma jovem comum, descobre ser a escolhida de uma antiga profecia e reúne um grupo variado para enfrentar um mal ressurgente, derrotando a escuridão e restaurando o equilíbrio ao mundo, mas uma nova ameaça começa a se formar."
+    },
+    "h00046": {
+      "titulo": "Elementos Em Chamas: O Guardião do Equilíbrio em um Mundo de Nações Elementais",
+      "tipo": "inspirado",
+      "universo_id": "dominadores_elementos",
+      "categoria": "Cartoons",
+      "resumo": "Vesper, um jovem que busca aprender a controlar os cinco elementos, viaja pelas nações elementais para restaurar o equilíbrio. Com a ajuda de Lyra e dos mestres que ele encontra, Vesper consegue derrotar o inimigo e restaurar o equilíbrio, mas uma nova aventura pode estar à espreita."
     }
   },
   "historico_universos_inspirados": [
-    "cacada_tesouro_amaldicoado",
-    "vigilante_mascarado_origem",
     "torneio_artes_marciais",
     "mutantes_escondidos",
     "equipe_poderes_diferentes",
@@ -331,7 +343,9 @@
     "dupla_investigacao_sobrenatural",
     "escola_herois_poderes",
     "rebeldes_imperio_galactico",
-    "gigantes_mecanicos_kaiju"
+    "gigantes_mecanicos_kaiju",
+    "heroi_escolhido_jrpg",
+    "dominadores_elementos"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -350,8 +364,6 @@
     "detetive_urbano_sobrenatural"
   ],
   "historico_titulos": [
-    "Aurora dos Campeões: Academia de Elite para Jovens Talentos Sobrenaturais",
-    "Palco de Sombras: Rivalidade e Autoconhecimento na Escola de Artes Estrela",
     "Guardiões do Cosmos: Descobrindo Formas Além do Infinito",
     "Crono do Destino: O Renascimento do Guardião Eterno",
     "Horizonte de Ruínas: Além da Linha do Silêncio",
@@ -389,6 +401,8 @@
     "Artefatos da Noite: Crimes Esquecidos na Interseção da Magia e do Aço",
     "Aprendizes de Honra: Campeões da Luz na Arena dos Destinos",
     "Rebelião Estelar: Renegados do Cosmos Contra o Império da Escuridão",
-    "Sincronia de Aço: Pilotos da Mente Contra os Abismos do Oceano"
+    "Sincronia de Aço: Pilotos da Mente Contra os Abismos do Oceano",
+    "O Herdeiro do Destino: Além da Profecia, uma Nova Era de Sombras e Redenção",
+    "Elementos Em Chamas: O Guardião do Equilíbrio em um Mundo de Nações Elementais"
   ]
 }

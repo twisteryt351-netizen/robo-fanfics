@@ -42,3 +42,5 @@
 [h00042 | one-shot (inspirado) | Anime/Mangá] Aprendizes de Honra: Campeões da Luz na Arena dos Destinos
 [h00043 | one-shot (inspirado) | Filmes] Rebelião Estelar: Renegados do Cosmos Contra o Império da Escuridão
 [h00044 | one-shot (inspirado) | Filmes] Sincronia de Aço: Pilotos da Mente Contra os Abismos do Oceano
+[h00045 | one-shot (inspirado) | Games] O Herdeiro do Destino: Além da Profecia, uma Nova Era de Sombras e Redenção
+[h00046 | one-shot (inspirado) | Cartoons] Elementos Em Chamas: O Guardião do Equilíbrio em um Mundo de Nações Elementais
