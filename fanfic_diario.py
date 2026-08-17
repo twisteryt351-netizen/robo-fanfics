@@ -73,11 +73,12 @@ MOODBOARD_PADRAO = "cinematic epic illustration, dramatic lighting, 8k digital a
 # ─────────────────────────────────────────────────────────────
 #  GROQ (texto)
 # ─────────────────────────────────────────────────────────────
-def pedir_ia_groq(prompt, temperatura=0.8):
+def pedir_ia_groq(prompt, temperatura=0.8, max_tokens=8000):
     response = groq_client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
         model=MODELO_IA,
         temperature=temperatura,
+        max_tokens=max_tokens,
     )
     return response.choices[0].message.content.strip()
 
@@ -95,6 +96,73 @@ def extrair_resumo_interno(texto_bruto):
     return texto_bruto.strip(), "(sem resumo — continuidade pode ficar limitada)"
 
 
+TAGS_BLOCO_PRONTAS = ("<h2", "<h3", "<blockquote", "<div", "<p", "<table", "<ul", "<ol")
+
+
+def normalizar_para_html(texto):
+    """Rede de segurança contra a IA usar Markdown (## título, **negrito**,
+    > citação) em vez de HTML puro, e contra parágrafos separados só por
+    linha em branco — que o navegador/Blogger colapsa em espaço único,
+    virando uma parede de texto só com '##' aparecendo literalmente.
+
+    Divide o texto em blocos por linha em branco (a estrutura que a IA de
+    fato produziu) e converte cada bloco pro HTML equivalente."""
+    texto = texto.strip().replace("\r\n", "\n").replace("\r", "\n")
+    blocos = re.split(r'\n\s*\n', texto)
+
+    html_blocos = []
+    for bloco in blocos:
+        bloco = bloco.strip()
+        if not bloco:
+            continue
+
+        # já é HTML de verdade (ex: a <div class="nota-autor">) -> mantém
+        if bloco.lower().startswith(TAGS_BLOCO_PRONTAS):
+            html_blocos.append(bloco)
+            continue
+
+        # heading estilo Markdown: "## Texto" ou "### Texto"
+        m = re.match(r'^#{1,3}\s*(.+)$', bloco, flags=re.DOTALL)
+        if m:
+            resto = m.group(1).strip()
+            # protege contra a IA grudar o parágrafo seguinte na mesma linha
+            # do título (sem quebra) — corta no fim da 1ª frase ou em ~12 palavras
+            corte = re.search(r'[.!?]\s+[A-ZÀ-Ú]', resto)
+            if corte and corte.start() < 100:
+                titulo_bloco = resto[:corte.start() + 1].strip()
+                resto_paragrafo = resto[corte.start() + 1:].strip()
+            elif len(resto) > 90:
+                palavras = resto.split()
+                titulo_bloco = " ".join(palavras[:12])
+                resto_paragrafo = " ".join(palavras[12:])
+            else:
+                titulo_bloco, resto_paragrafo = resto, ""
+            html_blocos.append(f"<h2>{titulo_bloco}</h2>")
+            if resto_paragrafo:
+                resto_paragrafo = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', resto_paragrafo)
+                html_blocos.append(f"<p>{resto_paragrafo}</p>")
+            continue
+
+        # blockquote estilo Markdown: "> Texto"
+        if bloco.startswith(">"):
+            citado = re.sub(r'^>\s?', '', bloco, flags=re.MULTILINE).strip().replace("\n", "<br>")
+            html_blocos.append(f"<blockquote>{citado}</blockquote>")
+            continue
+
+        # parágrafo comum
+        paragrafo = bloco.replace("\n", "<br>")
+        paragrafo = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', paragrafo)
+        paragrafo = re.sub(r'(?<!\*)\*([^*\n]+?)\*(?!\*)', r'<em>\1</em>', paragrafo)
+        html_blocos.append(f"<p>{paragrafo}</p>")
+
+    return "\n".join(html_blocos)
+
+
+def contar_palavras_html(texto_html):
+    texto_puro = re.sub(r'<[^>]+>', ' ', texto_html)
+    return len(re.findall(r"[A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)*", texto_puro))
+
+
 def gerar_historia(estado, tarefa):
     if tarefa["modo"] == "continuacao":
         prompt = montar_prompt_continuacao(estado, tarefa["serie_id"], tarefa)
@@ -103,8 +171,32 @@ def gerar_historia(estado, tarefa):
         prompt, universo = montar_prompt_one_shot(estado, tarefa["tipo"])
         universo_info = universo
 
-    raw = pedir_ia_groq(prompt, temperatura=0.82)
+    raw = pedir_ia_groq(prompt, temperatura=0.82, max_tokens=8000)
     corpo, resumo = extrair_resumo_interno(raw)
+    corpo = normalizar_para_html(corpo)
+
+    # Se saiu curta (a Groq às vezes encerra antes do pedido), pede
+    # continuação real da história em vez de publicar algo raso/incompleto.
+    tentativas = 0
+    while contar_palavras_html(corpo) < int(PALAVRAS_MIN * 0.8) and tentativas < 2:
+        tentativas += 1
+        palavras_atuais = contar_palavras_html(corpo)
+        print(f"  ✏️  História curta ({palavras_atuais} palavras, meta {PALAVRAS_MIN}) "
+              f"— pedindo continuação (tentativa {tentativas})...")
+        prompt_continuar = f"""
+A história abaixo terminou curta demais (menos de {PALAVRAS_MIN} palavras).
+Continue-a EXATAMENTE de onde parou, mesmo tom, personagens e formato HTML
+(pode abrir novos <h2> se fizer sentido pra próxima cena). NÃO repita nada
+do que já foi escrito — só continue e desenvolva mais até fechar a história
+com um final satisfatório.
+
+HISTÓRIA ATÉ AGORA:
+{corpo}
+"""
+        continuacao = pedir_ia_groq(prompt_continuar, temperatura=0.82, max_tokens=8000)
+        continuacao = normalizar_para_html(continuacao)
+        corpo = corpo + "\n" + continuacao
+
     return corpo, resumo, universo_info
 
 
@@ -204,7 +296,7 @@ Example: [{{"prompt": "...", "legenda": "..."}}, {{"prompt": "...", "legenda": "
 DIMENSOES_RATIO = {"16:9": (1280, 720), "1:1": (1024, 1024), "9:16": (720, 1280)}
 
 
-def gerar_imagem_worker_b64(prompt_img, ratio="16:9"):
+def gerar_imagem_worker_b64(prompt_img, ratio="16:9", tentativas=3):
     largura, altura = DIMENSOES_RATIO.get(ratio, (1280, 720))
     prompt_codificado = urllib.parse.quote(prompt_img)
     url = f"https://image.pollinations.ai/prompt/{prompt_codificado}"
@@ -215,14 +307,28 @@ def gerar_imagem_worker_b64(prompt_img, ratio="16:9"):
     headers = {}
     if POLLINATIONS_TOKEN:
         headers["Authorization"] = f"Bearer {POLLINATIONS_TOKEN}"
-    resp = requests.get(url, params=params, headers=headers, timeout=120)
-    resp.raise_for_status()
-    if "image" not in resp.headers.get("Content-Type", ""):
-        raise ValueError("Resposta não parece ser uma imagem.")
-    b64 = base64.b64encode(resp.content).decode("utf-8")
-    if not b64:
-        raise ValueError("Pollinations.ai retornou imagem vazia.")
-    return b64
+
+    ultimo_erro = None
+    for tentativa in range(1, tentativas + 1):
+        try:
+            resp = requests.get(url, params=params, headers=headers, timeout=120)
+            resp.raise_for_status()
+            if "image" not in resp.headers.get("Content-Type", ""):
+                raise ValueError(f"Resposta não parece ser uma imagem (Content-Type: {resp.headers.get('Content-Type')}).")
+            b64 = base64.b64encode(resp.content).decode("utf-8")
+            if not b64:
+                raise ValueError("Pollinations.ai retornou imagem vazia.")
+            return b64
+        except Exception as e:
+            ultimo_erro = e
+            if tentativa < tentativas:
+                espera = 5 * tentativa
+                print(f"  ⚠️  Pollinations.ai falhou (tentativa {tentativa}/{tentativas}): {e}. "
+                      f"Tentando de novo em {espera}s...")
+                time.sleep(espera)
+                # muda o seed pra evitar bater exatamente no mesmo erro/cache
+                params["seed"] = __import__("random").randint(1, 999999)
+    raise ultimo_erro
 
 
 def hospedar_imgbb(b64_data, nome="fanfic_img"):
