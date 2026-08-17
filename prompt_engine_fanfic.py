@@ -53,15 +53,24 @@ PROFUNDIDADE E RITMO (isso é pra quem gosta de ler de verdade, não um resumo):
   não só o que ele faz.
 
 REGRAS DE FORMATO (HTML puro, sem Markdown):
+- PROIBIDO usar sintaxe de Markdown em QUALQUER lugar do texto: nada de "##"
+  para subtítulo, nada de "**negrito**", nada de "*itálico*", nada de "> "
+  pra citação. Use SOMENTE as tags HTML reais indicadas abaixo. Se você
+  escrever "##" em algum ponto, está ERRADO — o subtítulo tem que ser uma
+  tag <h2>...</h2> de verdade.
+- TODO parágrafo normal de texto corrido deve vir envolvido em <p> e </p>,
+  um parágrafo por bloco. Nunca deixe frases soltas sem tag ao redor.
 - HOOK NO PRIMEIRO PARÁGRAFO: comece IN MEDIAS RES — uma linha de diálogo de
   impacto, uma pergunta intrigante, uma imagem sensorial forte, ou o personagem
   já no meio de uma decisão/ação. NUNCA comece com contexto/explicação genérica
   ("Há muito tempo, num reino distante..." está PROIBIDO). O leitor precisa
   querer continuar já na primeira frase.
-- Pelo menos 4 subtítulos <h2> ESPECÍFICOS da cena que introduzem (nunca rótulos
-  genéricos tipo "Capítulo 1" sozinho — combine com algo que aconteceu nessa parte,
-  ex: "O Portão que Não Deveria Abrir"). Cada <h2> marca uma cena/momento novo.
-- 1 a 2 <blockquote> com uma fala ou pensamento marcante de um personagem.
+- Pelo menos 4 subtítulos <h2>...</h2> ESPECÍFICOS da cena que introduzem (nunca
+  rótulos genéricos tipo "Capítulo 1" sozinho — combine com algo que aconteceu
+  nessa parte, ex: <h2>O Portão que Não Deveria Abrir</h2>). Cada <h2> marca
+  uma cena/momento novo, sozinho em sua própria linha, sem texto colado nele.
+- 1 a 2 <blockquote>...</blockquote> com uma fala ou pensamento marcante de
+  um personagem.
 - EXATAMENTE 3 "Notas do Autor" — comentários curtos, simpáticos e bem-humorados,
   em primeira pessoa, como se você (o autor do blog) estivesse comentando a
   própria história com o leitor nos bastidores (uma reação a uma cena, uma
