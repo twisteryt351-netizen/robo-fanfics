@@ -296,6 +296,13 @@ def html_imagem_blogger(src, alt_title, legenda="", height=360, width=640):
 def obter_imagens_html(itens_imagem, titulo, palavra_fallback):
     imagens_html = []
     openverse_cache = None
+
+    def _openverse_fallback(i):
+        nonlocal openverse_cache
+        if openverse_cache is None:
+            openverse_cache = buscar_imagens_openverse(palavra_fallback, quantidade=len(itens_imagem))
+        return openverse_cache[i % len(openverse_cache)]
+
     for i, item in enumerate(itens_imagem):
         prompt_img = item["prompt"]
         legenda = item.get("legenda", "")
@@ -310,13 +317,15 @@ def obter_imagens_html(itens_imagem, titulo, palavra_fallback):
                 else:
                     raise ValueError("URL do ImgBB não respondeu 200 depois de várias tentativas.")
             except Exception as e_imgbb:
-                print(f"  ⚠️  ImgBB falhou/não propagou ({e_imgbb}). Usando data URI...")
-                src = f"data:image/png;base64,{b64}"
+                # NUNCA usa data URI aqui: o Blogger não gera miniatura nem
+                # sempre renderiza base64 embutido de primeira, o que causava
+                # o "só aparece depois de abrir e atualizar". Sempre cai pra
+                # uma URL externa real (Openverse) em vez disso.
+                print(f"  ⚠️  ImgBB falhou/não propagou ({e_imgbb}). Buscando no Openverse...")
+                src = _openverse_fallback(i)
         except Exception as e_ia:
             print(f"  ⚠️  Pollinations.ai falhou ({e_ia}). Buscando no Openverse...")
-            if openverse_cache is None:
-                openverse_cache = buscar_imagens_openverse(palavra_fallback, quantidade=len(itens_imagem))
-            src = openverse_cache[i % len(openverse_cache)]
+            src = _openverse_fallback(i)
         altura = 420 if i == 0 else 300
         imagens_html.append(html_imagem_blogger(src, titulo, legenda=legenda, height=altura))
         if i < len(itens_imagem) - 1:
@@ -341,9 +350,14 @@ def montar_html(corpo_artigo, imagens_html, rodape_info):
             # nenhum <h2> pra ancorar — vai tudo pro fim, mas nunca sobreposto
             corpo_final = corpo_artigo + "".join(extras)
         elif len(alvos) >= len(extras):
-            # âncoras suficientes: uma posição DISTINTA pra cada imagem extra
-            passo = len(alvos) / len(extras)
-            posicoes_escolhidas = sorted({alvos[int(i * passo)] for i in range(len(extras))})
+            # âncoras suficientes: espalha as imagens do INÍCIO ao FIM da lista
+            # de âncoras (usa a primeira e a última quando possível), em vez de
+            # amontoar tudo nas primeiras posições
+            if len(extras) == 1:
+                indices = [len(alvos) // 2]
+            else:
+                indices = [round(i * (len(alvos) - 1) / (len(extras) - 1)) for i in range(len(extras))]
+            posicoes_escolhidas = sorted({alvos[i] for i in indices})
             # se a deduplicação por arredondamento colidiu, completa com âncoras livres
             livres = [a for a in alvos if a not in posicoes_escolhidas]
             while len(posicoes_escolhidas) < len(extras) and livres:
@@ -390,7 +404,19 @@ def publicar_no_blogger(titulo, conteudo, tags=None):
     if tags:
         corpo["labels"] = tags
     res = blogger.posts().insert(blogId=BLOGGER_ID, body=corpo).execute()
+    post_id = res.get("id")
     print(f"📖 Postado: '{titulo}' -> {res.get('url')}")
+
+    # Automatiza o "abrir e atualizar" manual: o Blogger às vezes só
+    # (re)processa miniaturas/imagens externas quando o post é resalvo.
+    # Um update logo em seguida reproduz esse mesmo efeito via API.
+    if post_id:
+        try:
+            time.sleep(5)  # dá um tempinho pro Blogger terminar de indexar o insert
+            blogger.posts().update(blogId=BLOGGER_ID, postId=post_id, body=corpo).execute()
+            print("  🔄 Re-save automático aplicado (equivalente a abrir e atualizar).")
+        except Exception as e_update:
+            print(f"  ⚠️  Re-save automático falhou (post já está publicado normalmente): {e_update}")
 
 
 def registrar_historico_texto(id_historia, titulo, modo, categoria):
