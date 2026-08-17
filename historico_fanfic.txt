@@ -38,3 +38,7 @@
 [h00038 | one-shot (original) | Fantasia Ecológica] Guardiões da Terra Esquecida: Onde a Memória da Natureza se Ergue Contra o Silêncio da Destruição
 [h00039 | one-shot (original) | Urban Fantasy] Cidade Oculta: Crimes sem Rastros na Fronteira da Magia e da Tecnologia
 [h00040 | one-shot (original) | Drama/Coming-of-age] Ecos do Palco: Rivalidade e Autoconhecimento na Sinfonia da Ambição
+[h00041 | one-shot (original) | Urban Fantasy] Artefatos da Noite: Crimes Esquecidos na Interseção da Magia e do Aço
+[h00042 | one-shot (inspirado) | Anime/Mangá] Aprendizes de Honra: Campeões da Luz na Arena dos Destinos
+[h00043 | one-shot (inspirado) | Filmes] Rebelião Estelar: Renegados do Cosmos Contra o Império da Escuridão
+[h00044 | one-shot (inspirado) | Filmes] Sincronia de Aço: Pilotos da Mente Contra os Abismos do Oceano

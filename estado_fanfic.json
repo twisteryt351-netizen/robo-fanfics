@@ -1,5 +1,5 @@
 {
-  "proximo_id": 41,
+  "proximo_id": 45,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -281,12 +281,37 @@
       "universo_id": "escola_talentos_ocultos",
       "categoria": "Drama/Coming-of-age",
       "resumo": "Suki e Kaito, dois jovens talentosos, lidam com pressão e rivalidade na escola de artes de Ashihama, mas descobrem que a verdadeira arte vem do coração, e juntos criam algo que transcende a competitividade."
+    },
+    "h00041": {
+      "titulo": "Artefatos da Noite: Crimes Esquecidos na Interseção da Magia e do Aço",
+      "tipo": "original",
+      "universo_id": "detetive_urbano_sobrenatural",
+      "categoria": "Urban Fantasy",
+      "resumo": "Finnian, um detetive especializado em casos de magia e tecnologia, investiga crimes inexplicáveis em uma cidade onde o mundo oculto coexiste com o comum, descobrindo um plano para expor a magia à população e se tornando o guardião de um mundo escondido."
+    },
+    "h00042": {
+      "titulo": "Aprendizes de Honra: Campeões da Luz na Arena dos Destinos",
+      "tipo": "inspirado",
+      "universo_id": "escola_herois_poderes",
+      "categoria": "Anime/Mangá",
+      "resumo": "Draven e seus amigos descobrem um mundo secreto ao abrir o Portão de Eldar e enfrentam desafios para provar que são dignos de proteger Eldrida. Com o artefato em mãos, eles retornam como heróis, mas uma nova ameaça se forma no horizonte."
+    },
+    "h00043": {
+      "titulo": "Rebelião Estelar: Renegados do Cosmos Contra o Império da Escuridão",
+      "tipo": "inspirado",
+      "universo_id": "rebeldes_imperio_galactico",
+      "categoria": "Filmes",
+      "resumo": "Yara, uma jovem sensitiva-à-força, se junta à rebelião contra o império tirânico que controla a galáxia, e com sua habilidade, ajuda a tripulação da nave \"Liberdade\" a escapar de uma armadilha imperial. A batalha pela liberdade da galáxia está longe de terminar, mas com Yara e a tripulação da \"Liberdade\" na linha de frente, há uma nova esperança no horizonte."
+    },
+    "h00044": {
+      "titulo": "Sincronia de Aço: Pilotos da Mente Contra os Abismos do Oceano",
+      "tipo": "inspirado",
+      "universo_id": "gigantes_mecanicos_kaiju",
+      "categoria": "Filmes",
+      "resumo": "Kael e Lyra, dois pilotos de robôs gigantes, lutam contra monstros marinhos colossais que ameaçam a humanidade, e após uma batalha intensa, conseguem derrotar o inimigo, mas sabem que novos desafios estão por vir."
     }
   },
   "historico_universos_inspirados": [
-    "dominadores_elementos",
-    "gigantes_mecanicos_kaiju",
-    "ilha_batalha_ultimo_de_pe",
     "cacada_tesouro_amaldicoado",
     "vigilante_mascarado_origem",
     "torneio_artes_marciais",
@@ -303,7 +328,10 @@
     "grupo_masmorra_classes",
     "jornada_anel_poder",
     "vila_oculta_guerreiros",
-    "dupla_investigacao_sobrenatural"
+    "dupla_investigacao_sobrenatural",
+    "escola_herois_poderes",
+    "rebeldes_imperio_galactico",
+    "gigantes_mecanicos_kaiju"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -318,13 +346,10 @@
     "circo_itinerante_segredos",
     "guardioes_natureza_ameacada",
     "detetive_urbano_sobrenatural",
-    "escola_talentos_ocultos"
+    "escola_talentos_ocultos",
+    "detetive_urbano_sobrenatural"
   ],
   "historico_titulos": [
-    "Sombra das Montanhas: O Legado dos Clãs Esquecidos",
-    "Cavernas da Eternidade: Em Busca dos Artefatos Perdidos de Eldoria",
-    "Cidade Oculta: O Detetive das Sombras Tecnológicas",
-    "Reino de Umbra: A Ascensão das Sombras Esquecidas",
     "Aurora dos Campeões: Academia de Elite para Jovens Talentos Sobrenaturais",
     "Palco de Sombras: Rivalidade e Autoconhecimento na Escola de Artes Estrela",
     "Guardiões do Cosmos: Descobrindo Formas Além do Infinito",
@@ -360,6 +385,10 @@
     "Sombras Sob o Big Top: Segredos e Poderes Escondidos sob a Luz dos Holofotes",
     "Guardiões da Terra Esquecida: Onde a Memória da Natureza se Ergue Contra o Silêncio da Destruição",
     "Cidade Oculta: Crimes sem Rastros na Fronteira da Magia e da Tecnologia",
-    "Ecos do Palco: Rivalidade e Autoconhecimento na Sinfonia da Ambição"
+    "Ecos do Palco: Rivalidade e Autoconhecimento na Sinfonia da Ambição",
+    "Artefatos da Noite: Crimes Esquecidos na Interseção da Magia e do Aço",
+    "Aprendizes de Honra: Campeões da Luz na Arena dos Destinos",
+    "Rebelião Estelar: Renegados do Cosmos Contra o Império da Escuridão",
+    "Sincronia de Aço: Pilotos da Mente Contra os Abismos do Oceano"
   ]
 }
