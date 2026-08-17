@@ -45,6 +45,18 @@ for nome, valor in [
 groq_client = Groq(api_key=GROQ_API_KEY)
 MODELO_IA   = "llama-3.3-70b-versatile"
 
+# Diagnóstico: mostra no log se os tokens OPCIONAIS realmente chegaram ao
+# processo (sem expor o valor). Se aparecer "NÃO configurado" aqui mesmo
+# tendo cadastrado o secret no GitHub, o problema é que o workflow .yml
+# não está passando ele como variável de ambiente pro step que roda o script.
+def _mascarar(valor):
+    if not valor:
+        return "❌ NÃO configurado"
+    return f"✅ configurado ({len(valor)} caracteres, começa com '{valor[:4]}...')"
+
+print(f"🔑 POLLINATIONS_TOKEN: {_mascarar(POLLINATIONS_TOKEN)}")
+print(f"🔑 IMGBB_API_KEY:      {_mascarar(IMGBB_API_KEY)}")
+
 ARQUIVO_HISTORICO_TEXTO = "historico_fanfic.txt"
 IMAGEM_PADRAO = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/News_icon.svg/640px-News_icon.svg.png"
 
@@ -312,9 +324,12 @@ def gerar_imagem_worker_b64(prompt_img, ratio="16:9", tentativas=3):
     for tentativa in range(1, tentativas + 1):
         try:
             resp = requests.get(url, params=params, headers=headers, timeout=120)
-            resp.raise_for_status()
+            if resp.status_code != 200:
+                trecho = resp.text[:200].replace("\n", " ")
+                raise ValueError(f"HTTP {resp.status_code} — resposta: {trecho!r}")
             if "image" not in resp.headers.get("Content-Type", ""):
-                raise ValueError(f"Resposta não parece ser uma imagem (Content-Type: {resp.headers.get('Content-Type')}).")
+                trecho = resp.text[:200].replace("\n", " ")
+                raise ValueError(f"Resposta não é imagem (Content-Type: {resp.headers.get('Content-Type')}) — corpo: {trecho!r}")
             b64 = base64.b64encode(resp.content).decode("utf-8")
             if not b64:
                 raise ValueError("Pollinations.ai retornou imagem vazia.")
