@@ -43,7 +43,7 @@ for nome, valor in [
         raise ValueError(f"Faltou configurar a variável/segredo: {nome}")
 
 groq_client = Groq(api_key=GROQ_API_KEY)
-MODELO_IA   = "llama-3.3-70b-versatile"
+MODELO_IA   = "openai/gpt-oss-120b"
 
 # Diagnóstico: mostra no log se os tokens OPCIONAIS realmente chegaram ao
 # processo (sem expor o valor). Se aparecer "NÃO configurado" aqui mesmo
