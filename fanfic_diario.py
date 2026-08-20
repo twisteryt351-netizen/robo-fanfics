@@ -85,14 +85,27 @@ MOODBOARD_PADRAO = "cinematic epic illustration, dramatic lighting, 8k digital a
 # ─────────────────────────────────────────────────────────────
 #  GROQ (texto)
 # ─────────────────────────────────────────────────────────────
-def pedir_ia_groq(prompt, temperatura=0.8, max_tokens=8000):
-    response = groq_client.chat.completions.create(
-        messages=[{"role": "user", "content": prompt}],
-        model=MODELO_IA,
-        temperature=temperatura,
-        max_tokens=max_tokens,
-    )
-    return response.choices[0].message.content.strip()
+def pedir_ia_groq(prompt, temperatura=0.8, max_tokens=6500, tentativas=3):
+    kwargs = {
+        "messages": [{"role": "user", "content": prompt}],
+        "model": MODELO_IA,
+        "temperature": temperatura,
+        "max_tokens": max_tokens,
+    }
+    for tentativa in range(1, tentativas + 1):
+        try:
+            response = groq_client.chat.completions.create(**kwargs)
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            msg = str(e)
+            eh_rate_limit = "rate_limit_exceeded" in msg or "429" in msg or "413" in msg or "tokens per minute" in msg
+            if eh_rate_limit and tentativa < tentativas:
+                espera = 65  # a janela de TPM da Groq reseta por minuto
+                print(f"⚠️ Limite de tokens/min da Groq atingido (tentativa {tentativa}/{tentativas}). "
+                      f"Aguardando {espera}s pra janela resetar... ({msg[:150]})")
+                time.sleep(espera)
+            else:
+                raise
 
 
 # ─────────────────────────────────────────────────────────────
@@ -183,7 +196,7 @@ def gerar_historia(estado, tarefa):
         prompt, universo = montar_prompt_one_shot(estado, tarefa["tipo"])
         universo_info = universo
 
-    raw = pedir_ia_groq(prompt, temperatura=0.82, max_tokens=8000)
+    raw = pedir_ia_groq(prompt, temperatura=0.82)
     corpo, resumo = extrair_resumo_interno(raw)
     corpo = normalizar_para_html(corpo)
 
@@ -195,17 +208,25 @@ def gerar_historia(estado, tarefa):
         palavras_atuais = contar_palavras_html(corpo)
         print(f"  ✏️  História curta ({palavras_atuais} palavras, meta {PALAVRAS_MIN}) "
               f"— pedindo continuação (tentativa {tentativas})...")
+        # manda só o FINAL do que já foi escrito (não a história inteira) —
+        # evita estourar o limite de tokens de entrada da Groq, que soma
+        # prompt + max_tokens dentro da mesma janela por minuto
+        contexto_final = corpo[-2500:]
         prompt_continuar = f"""
-A história abaixo terminou curta demais (menos de {PALAVRAS_MIN} palavras).
-Continue-a EXATAMENTE de onde parou, mesmo tom, personagens e formato HTML
-(pode abrir novos <h2> se fizer sentido pra próxima cena). NÃO repita nada
-do que já foi escrito — só continue e desenvolva mais até fechar a história
-com um final satisfatório.
+Você está escrevendo uma história longa e ela terminou curta demais (menos
+de {PALAVRAS_MIN} palavras no total). Abaixo está o TRECHO FINAL do que já
+foi escrito (não é a história inteira, só o final, pra você saber onde
+parou). Continue EXATAMENTE de onde esse trecho termina, mesmo tom,
+personagens e formato HTML (pode abrir novos <h2> se fizer sentido pra
+próxima cena). NÃO repita nada, não recomece a cena — apenas continue a
+partir daqui e desenvolva mais até fechar a história com um final
+satisfatório.
 
-HISTÓRIA ATÉ AGORA:
-{corpo}
+TRECHO FINAL DO QUE JÁ FOI ESCRITO:
+[...continua de: ]
+{contexto_final}
 """
-        continuacao = pedir_ia_groq(prompt_continuar, temperatura=0.82, max_tokens=8000)
+        continuacao = pedir_ia_groq(prompt_continuar, temperatura=0.82)
         continuacao = normalizar_para_html(continuacao)
         corpo = corpo + "\n" + continuacao
 
