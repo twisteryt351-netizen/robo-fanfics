@@ -1,5 +1,5 @@
 {
-  "proximo_id": 47,
+  "proximo_id": 51,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -323,11 +323,37 @@
       "universo_id": "dominadores_elementos",
       "categoria": "Cartoons",
       "resumo": "Vesper, um jovem que busca aprender a controlar os cinco elementos, viaja pelas nações elementais para restaurar o equilíbrio. Com a ajuda de Lyra e dos mestres que ele encontra, Vesper consegue derrotar o inimigo e restaurar o equilíbrio, mas uma nova aventura pode estar à espreita."
+    },
+    "h00047": {
+      "titulo": "Competidores na Ilha Isolada – A Última Sobrevivência Onde Só o Vencedor Leva Tudo",
+      "tipo": "inspirado",
+      "universo_id": "ilha_batalha_ultimo_de_pe",
+      "categoria": "Games",
+      "resumo": "Suki e três competidores são deixados em uma ilha mortal, enfrentam provas, formam alianças frágeis e descobrem uma chave que os leva a um novo continente, preparando o caminho para a próxima aventura."
+    },
+    "h00048": {
+      "titulo": "Sombras da Vingança: O cidadão que se tornou guardião da cidade corrupta",
+      "tipo": "inspirado",
+      "universo_id": "vigilante_mascarado_origem",
+      "categoria": "Quadrinhos",
+      "resumo": "Isolde, após a perda do irmão, assume a identidade de vigilante para impedir o plano da Corporação Lúmen de apagar a memória da cidade, sacrificando a torre central e iniciando uma rede de protetores."
+    },
+    "h00049": {
+      "titulo": "Encontro de Opostos: O Que Cada Um Está Disposta a Arriscar Pela Outra",
+      "tipo": "original",
+      "universo_id": "romance_dois_mundos",
+      "categoria": "Romance",
+      "resumo": "Nyla, uma sobrevivente de desolação, une-se ao nobre Kael para encontrar um artefato que pode restaurar suas terras; juntos arriscam tudo, enfrentam uma tempestade e descobrem que a confiança mútua pode mudar destinos."
+    },
+    "h00050": {
+      "titulo": "Sobreviventes do Crepúsculo: A Verdadeira Ameaça que Se Esconde nas Sombras do Mundo Pós‑Colapso",
+      "tipo": "original",
+      "universo_id": "sobrevivencia_pos_colapso",
+      "categoria": "Horror/Sobrevivência",
+      "resumo": "Dorian lidera um grupo de sobreviventes contra uma névoa que consome memórias, descobrindo que a verdadeira ameaça é uma antiga fonte de energia, que eles desativam, mas um novo mistério surge."
     }
   },
   "historico_universos_inspirados": [
-    "torneio_artes_marciais",
-    "mutantes_escondidos",
     "equipe_poderes_diferentes",
     "jogos_sobrevivencia_distopia",
     "escola_magia_oculta",
@@ -345,7 +371,9 @@
     "rebeldes_imperio_galactico",
     "gigantes_mecanicos_kaiju",
     "heroi_escolhido_jrpg",
-    "dominadores_elementos"
+    "dominadores_elementos",
+    "ilha_batalha_ultimo_de_pe",
+    "vigilante_mascarado_origem"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -361,13 +389,11 @@
     "guardioes_natureza_ameacada",
     "detetive_urbano_sobrenatural",
     "escola_talentos_ocultos",
-    "detetive_urbano_sobrenatural"
+    "detetive_urbano_sobrenatural",
+    "romance_dois_mundos",
+    "sobrevivencia_pos_colapso"
   ],
   "historico_titulos": [
-    "Guardiões do Cosmos: Descobrindo Formas Além do Infinito",
-    "Crono do Destino: O Renascimento do Guardião Eterno",
-    "Horizonte de Ruínas: Além da Linha do Silêncio",
-    "Vultos na Noite: Segredos Entre Cidades e Sombras",
     "Mares de Alvorada: O Tesouro que Transforma Destinos",
     "Fronteira do Esquecimento: Expedição Além do Abismo",
     "Equilíbrio Elemental: O Jovem Guardião dos Cinco Elementos",
@@ -403,6 +429,10 @@
     "Rebelião Estelar: Renegados do Cosmos Contra o Império da Escuridão",
     "Sincronia de Aço: Pilotos da Mente Contra os Abismos do Oceano",
     "O Herdeiro do Destino: Além da Profecia, uma Nova Era de Sombras e Redenção",
-    "Elementos Em Chamas: O Guardião do Equilíbrio em um Mundo de Nações Elementais"
+    "Elementos Em Chamas: O Guardião do Equilíbrio em um Mundo de Nações Elementais",
+    "Competidores na Ilha Isolada – A Última Sobrevivência Onde Só o Vencedor Leva Tudo",
+    "Sombras da Vingança: O cidadão que se tornou guardião da cidade corrupta",
+    "Encontro de Opostos: O Que Cada Um Está Disposta a Arriscar Pela Outra",
+    "Sobreviventes do Crepúsculo: A Verdadeira Ameaça que Se Esconde nas Sombras do Mundo Pós‑Colapso"
   ]
 }
