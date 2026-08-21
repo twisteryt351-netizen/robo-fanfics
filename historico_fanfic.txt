@@ -3,3 +3,7 @@
 [h00048 | one-shot (inspirado) | Quadrinhos] Sombras da Vingança: O cidadão que se tornou guardião da cidade corrupta
 [h00049 | one-shot (original) | Romance] Encontro de Opostos: O Que Cada Um Está Disposta a Arriscar Pela Outra
 [h00050 | one-shot (original) | Horror/Sobrevivência] Sobreviventes do Crepúsculo: A Verdadeira Ameaça que Se Esconde nas Sombras do Mundo Pós‑Colapso
+[h00051 | one-shot (inspirado) | Livros] Acampamento dos Deuses: O Adolescente que Descobre Seu Legado Mitológico
+[h00052 | one-shot (original) | Urban Fantasy] Sombras de Silício: O Detetive que Desvenda Crimes na Encruzilhada da Magia e da Máquina
+[h00053 | one-shot (inspirado) | Quadrinhos] Aliança de Poderes: O Confronto da Catástrofe que Só a União dos Diferentes Pode Vencer
+[h00054 | one-shot (inspirado) | Livros] Arena da Opressão: Jovens das Favelas Lutam por Sobrevivência na Televisão do Regime autoritário

@@ -1,5 +1,5 @@
 {
-  "proximo_id": 51,
+  "proximo_id": 55,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -351,12 +351,37 @@
       "universo_id": "sobrevivencia_pos_colapso",
       "categoria": "Horror/Sobrevivência",
       "resumo": "Dorian lidera um grupo de sobreviventes contra uma névoa que consome memórias, descobrindo que a verdadeira ameaça é uma antiga fonte de energia, que eles desativam, mas um novo mistério surge."
+    },
+    "h00051": {
+      "titulo": "Acampamento dos Deuses: O Adolescente que Descobre Seu Legado Mitológico",
+      "tipo": "inspirado",
+      "universo_id": "descendente_deuses",
+      "categoria": "Livros",
+      "resumo": "Zara descobre sua linhagem divina e, após enfrentar criaturas mitológicas e um antigo guardião das sombras, desperta seu poder de aurora, preparando-se para um próximo desafio que se anuncia nas sombras da floresta."
+    },
+    "h00052": {
+      "titulo": "Sombras de Silício: O Detetive que Desvenda Crimes na Encruzilhada da Magia e da Máquina",
+      "tipo": "original",
+      "universo_id": "detetive_urbano_sobrenatural",
+      "categoria": "Urban Fantasy",
+      "resumo": "Theron, detetive de magia e tecnologia, impede o Arquiteto de abrir um portal na Torre de Vidro, usando um cristal de Vínculo de Sombra, e descobre pistas para uma nova ameaça."
+    },
+    "h00053": {
+      "titulo": "Aliança de Poderes: O Confronto da Catástrofe que Só a União dos Diferentes Pode Vencer",
+      "tipo": "inspirado",
+      "universo_id": "equipe_poderes_diferentes",
+      "categoria": "Quadrinhos",
+      "resumo": "Arden, Lira e Kael unem habilidades distintas para fechar uma fenda dimensional e enfrentar a entidade da Ruptura, descobrindo que a ameaça persiste e preparando o terreno para futuras aventuras."
+    },
+    "h00054": {
+      "titulo": "Arena da Opressão: Jovens das Favelas Lutam por Sobrevivência na Televisão do Regime autoritário",
+      "tipo": "inspirado",
+      "universo_id": "jogos_sobrevivencia_distopia",
+      "categoria": "Livros",
+      "resumo": "Cass, forçada a competir em uma arena mortal, une-se a rebeldes para hackear a transmissão autoritária, provocando a queda da Câmera da Sombra e iniciando uma nova revolução."
     }
   },
   "historico_universos_inspirados": [
-    "equipe_poderes_diferentes",
-    "jogos_sobrevivencia_distopia",
-    "escola_magia_oculta",
     "torneio_poder_cosmico",
     "cacadores_demonios",
     "armaduras_constelacao",
@@ -373,7 +398,10 @@
     "heroi_escolhido_jrpg",
     "dominadores_elementos",
     "ilha_batalha_ultimo_de_pe",
-    "vigilante_mascarado_origem"
+    "vigilante_mascarado_origem",
+    "descendente_deuses",
+    "equipe_poderes_diferentes",
+    "jogos_sobrevivencia_distopia"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -391,13 +419,10 @@
     "escola_talentos_ocultos",
     "detetive_urbano_sobrenatural",
     "romance_dois_mundos",
-    "sobrevivencia_pos_colapso"
+    "sobrevivencia_pos_colapso",
+    "detetive_urbano_sobrenatural"
   ],
   "historico_titulos": [
-    "Mares de Alvorada: O Tesouro que Transforma Destinos",
-    "Fronteira do Esquecimento: Expedição Além do Abismo",
-    "Equilíbrio Elemental: O Jovem Guardião dos Cinco Elementos",
-    "MindSync: Guerreiros do Oceano contra a Escuridão Abissal",
     "Ilha da Supremacia: Sobrevivência e Traição na Terra do Último",
     "Tesouro da Destruição: Corsários da Maldição Eterna",
     "Sombra da Justiça: Renascimento de um Herói Anônimo",
@@ -433,6 +458,10 @@
     "Competidores na Ilha Isolada – A Última Sobrevivência Onde Só o Vencedor Leva Tudo",
     "Sombras da Vingança: O cidadão que se tornou guardião da cidade corrupta",
     "Encontro de Opostos: O Que Cada Um Está Disposta a Arriscar Pela Outra",
-    "Sobreviventes do Crepúsculo: A Verdadeira Ameaça que Se Esconde nas Sombras do Mundo Pós‑Colapso"
+    "Sobreviventes do Crepúsculo: A Verdadeira Ameaça que Se Esconde nas Sombras do Mundo Pós‑Colapso",
+    "Acampamento dos Deuses: O Adolescente que Descobre Seu Legado Mitológico",
+    "Sombras de Silício: O Detetive que Desvenda Crimes na Encruzilhada da Magia e da Máquina",
+    "Aliança de Poderes: O Confronto da Catástrofe que Só a União dos Diferentes Pode Vencer",
+    "Arena da Opressão: Jovens das Favelas Lutam por Sobrevivência na Televisão do Regime autoritário"
   ]
 }
