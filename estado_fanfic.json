@@ -1,5 +1,5 @@
 {
-  "proximo_id": 55,
+  "proximo_id": 59,
   "series_ativas": {},
   "historias_registradas": {
     "h00001": {
@@ -379,10 +379,37 @@
       "universo_id": "jogos_sobrevivencia_distopia",
       "categoria": "Livros",
       "resumo": "Cass, forçada a competir em uma arena mortal, une-se a rebeldes para hackear a transmissão autoritária, provocando a queda da Câmera da Sombra e iniciando uma nova revolução."
+    },
+    "h00055": {
+      "titulo": "Morte Súbita Revela Segredos de Família: A Decisão de Desenterrar o Passado",
+      "tipo": "original",
+      "universo_id": "investigacao_familia_segredo",
+      "categoria": "Mistério",
+      "resumo": "Theron descobre segredos de família ao investigar a morte da tia-avó, encontra artefatos antigos e decide preservar o mistério, enquanto uma nova ameaça se prepara nos bastidores."
+    },
+    "h00056": {
+      "titulo": "Torneio Mundial de Artes Marciais reúne lutadores de estilos extremos, cada um com um segredo oculto",
+      "tipo": "inspirado",
+      "universo_id": "torneio_artes_marciais",
+      "categoria": "Anime/Mangá",
+      "resumo": "Suki vence seu primeiro combate no torneio, descobre o Coração de Aegis, une forças com Kael para reforçar o selo de Kuroi, e enfrenta o Conselho das Sombras, deixando um novo mistério sobre fragmentos de luz."
+    },
+    "h00057": {
+      "titulo": "Entre Palcos e Rivalidades – A Jornada dos Jovens da Escola de Artes na Busca pela Verdade Interior",
+      "tipo": "original",
+      "universo_id": "escola_talentos_ocultos",
+      "categoria": "Drama/Coming-of-age",
+      "resumo": "Lysa, estudante de arte, supera pressão e rivalidade ao criar uma obra colaborativa que celebra vulnerabilidade, formando laços profundos e preparando-se para novos desafios."
+    },
+    "h00058": {
+      "titulo": "Segredos Mortais: A Morte Inesperada que Força a Família a Decidir entre Lembrar ou Esquecer",
+      "tipo": "original",
+      "universo_id": "investigacao_familia_segredo",
+      "categoria": "Mistério",
+      "resumo": "Isolde descobre uma caixa de ébano que contém um mapa e um cristal mágico, confronta a Guardiã dos Segredos e decide transformar o antigo pacto familiar em um compromisso coletivo, criando um santuário para proteger a vila enquanto deixa um gancho para futuros mistérios."
     }
   },
   "historico_universos_inspirados": [
-    "torneio_poder_cosmico",
     "cacadores_demonios",
     "armaduras_constelacao",
     "academia_vampiros",
@@ -401,7 +428,8 @@
     "vigilante_mascarado_origem",
     "descendente_deuses",
     "equipe_poderes_diferentes",
-    "jogos_sobrevivencia_distopia"
+    "jogos_sobrevivencia_distopia",
+    "torneio_artes_marciais"
   ],
   "historico_universos_originais": [
     "detetive_urbano_sobrenatural",
@@ -420,13 +448,12 @@
     "detetive_urbano_sobrenatural",
     "romance_dois_mundos",
     "sobrevivencia_pos_colapso",
-    "detetive_urbano_sobrenatural"
+    "detetive_urbano_sobrenatural",
+    "investigacao_familia_segredo",
+    "escola_talentos_ocultos",
+    "investigacao_familia_segredo"
   ],
   "historico_titulos": [
-    "Ilha da Supremacia: Sobrevivência e Traição na Terra do Último",
-    "Tesouro da Destruição: Corsários da Maldição Eterna",
-    "Sombra da Justiça: Renascimento de um Herói Anônimo",
-    "Sussurros da Terra: Protetores da Floresta contra a Sombra Industrial",
     "Colônia Êxodo: Entre a Sombra Digital e o Último Refúgio",
     "Círculo de Artes: Segredos e Rivalidades no Torneio das Sombras",
     "Gênese Oculta: Enigmas e Verdades na Fronteira entre Luz e Escuridão",
@@ -462,6 +489,10 @@
     "Acampamento dos Deuses: O Adolescente que Descobre Seu Legado Mitológico",
     "Sombras de Silício: O Detetive que Desvenda Crimes na Encruzilhada da Magia e da Máquina",
     "Aliança de Poderes: O Confronto da Catástrofe que Só a União dos Diferentes Pode Vencer",
-    "Arena da Opressão: Jovens das Favelas Lutam por Sobrevivência na Televisão do Regime autoritário"
+    "Arena da Opressão: Jovens das Favelas Lutam por Sobrevivência na Televisão do Regime autoritário",
+    "Morte Súbita Revela Segredos de Família: A Decisão de Desenterrar o Passado",
+    "Torneio Mundial de Artes Marciais reúne lutadores de estilos extremos, cada um com um segredo oculto",
+    "Entre Palcos e Rivalidades – A Jornada dos Jovens da Escola de Artes na Busca pela Verdade Interior",
+    "Segredos Mortais: A Morte Inesperada que Força a Família a Decidir entre Lembrar ou Esquecer"
   ]
 }

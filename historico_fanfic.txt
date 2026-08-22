@@ -7,3 +7,7 @@
 [h00052 | one-shot (original) | Urban Fantasy] Sombras de Silício: O Detetive que Desvenda Crimes na Encruzilhada da Magia e da Máquina
 [h00053 | one-shot (inspirado) | Quadrinhos] Aliança de Poderes: O Confronto da Catástrofe que Só a União dos Diferentes Pode Vencer
 [h00054 | one-shot (inspirado) | Livros] Arena da Opressão: Jovens das Favelas Lutam por Sobrevivência na Televisão do Regime autoritário
+[h00055 | one-shot (original) | Mistério] Morte Súbita Revela Segredos de Família: A Decisão de Desenterrar o Passado
+[h00056 | one-shot (inspirado) | Anime/Mangá] Torneio Mundial de Artes Marciais reúne lutadores de estilos extremos, cada um com um segredo oculto
+[h00057 | one-shot (original) | Drama/Coming-of-age] Entre Palcos e Rivalidades – A Jornada dos Jovens da Escola de Artes na Busca pela Verdade Interior
+[h00058 | one-shot (original) | Mistério] Segredos Mortais: A Morte Inesperada que Força a Família a Decidir entre Lembrar ou Esquecer
